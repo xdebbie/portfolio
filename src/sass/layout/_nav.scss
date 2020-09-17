@@ -1,0 +1,86 @@
+/* --------------------------------------------
+$  NAV (header)
+ --------------------------------------------*/
+
+header {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  background-color: colour(oyster);
+
+  .inner-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: font(helvetica);
+    height: 80px;
+    max-width: 1280px;
+    color: colour(cod-gray);
+    margin: 0 auto;
+
+    .logo {
+      a {
+        font-weight: bolder;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+        margin-left: 3px;
+        transition: all 200ms ease-out;
+        font-size: font-size(logo);
+
+        &:visited {
+          color: colour(cod-gray);
+        }
+
+        &:focus {
+          color: colour(cod-gray);
+        }
+
+        &:hover {
+          color: colour(santa-fe);
+        }
+
+        &:active {
+          color: colour(cod-gray);
+        }
+      }
+    }
+
+    .navigation {
+      nav {
+        display: flex;
+        flex-direction: row;
+
+        a {
+          font-size: font-size(nav);
+          margin: 0 20px;
+          text-decoration: none;
+          letter-spacing: 1.75px;
+          text-transform: uppercase;
+          transition: all 200ms ease-out;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:visited {
+            color: colour(cod-gray);
+          }
+
+          &:focus {
+            color: colour(cod-gray);
+          }
+
+          &:hover {
+            color: colour(santa-fe);
+          }
+
+          &:active {
+            color: colour(cod-gray);
+          }
+        }
+      }
+    }
+  }
+}

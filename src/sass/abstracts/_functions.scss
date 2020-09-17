@@ -1,0 +1,25 @@
+/* --------------------------------------------
+$  FUNCTIONS
+ --------------------------------------------*/
+
+/* COLOUR MAP */
+$colours: (
+  white: rgb(255, 255, 255),
+  black: rgb(0, 0, 0),
+  cod-gray: rgb(10, 10, 10),
+  sazerac: rgb(255, 241, 227),
+  // light mode
+  oyster: rgb(230, 209, 209),
+  silk: rgb(189, 168, 159),
+  santa-fe: rgb(178, 110, 84),
+  bazaar: rgb(155, 120, 117),
+  cowboy: rgb(75, 37, 45),
+  // dark mode
+  orangina: rgb(255, 70, 0),
+  chrome: rgb(255, 167, 0),
+  background: rgb(27, 38, 44),
+);
+
+@function colour($colour-name) {
+  @return map-get($colours, $colour-name);
+}

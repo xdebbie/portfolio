@@ -1,0 +1,40 @@
+#banner {
+  background-color: colour(oyster);
+  height: 80vh;
+
+  .container {
+    position: relative;
+
+    .image-left {
+      .profile-image {
+        max-width: 520px;
+        padding: 15rem 0 0 4rem;
+
+        img {
+          border-radius: 7px;
+        }
+      }
+    }
+
+    .text-right {
+      .title {
+        font-size: 5rem;
+        position: absolute;
+        top: 20rem;
+        right: 20rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      p {
+        max-width: 60rem;
+        font-size: 3rem;
+        position: absolute;
+        top: 35rem;
+        left: 60rem;
+      }
+    }
+  }
+}

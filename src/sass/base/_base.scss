@@ -1,0 +1,46 @@
+/* --------------------------------------------
+$  BASIC STYLES
+ --------------------------------------------*/
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html,
+body {
+  width: 100vw;
+  font-family: font(helvetica);
+  font-size: font-size(nav);
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+html {
+  display: block;
+  box-sizing: border-box;
+  // 10px = 1rem
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100vw;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}

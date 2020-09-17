@@ -1,0 +1,37 @@
+#projects {
+  background-color: colour(bazaar);
+  height: 80vh;
+
+  .container {
+    position: relative;
+
+    .projects-section {
+      .title {
+        font-size: 5rem;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      p {
+        max-width: 60rem;
+        font-size: 3rem;
+        top: 35rem;
+        left: 60rem;
+      }
+
+      ul {
+        padding: 10rem 0;
+
+        li {
+          list-style: none;
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

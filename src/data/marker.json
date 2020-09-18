@@ -10,29 +10,13 @@
     {
       "type": "Feature",
       "properties": {
-        "OFFICE_ID": "002",
-        "NAME": "Studio 02 - Kungsklippan",
-        "ADDRESS": "Kungsklippan 3, 11224 Stockholm, Sverige",
-        "NOTES": "Indoor",
-        "FACILITY": "80sqm of studio area, make-up room, hairdresser, wardrobe"
+        "OFFICE_ID": "001 - PARIS",
+        "ADDRESS": "Paris, France",
+        "NAME": "I am here, but also everywhere!"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [59.33, 18.05]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "OFFICE_ID": "001",
-        "NAME": "Studio 01 - Drottninggatan",
-        "ADDRESS": "Drottninggatan 85, 111 61 Stockholm, Sverige",
-        "NOTES": "Indoor + outdoor",
-        "FACILITY": "140sqm of indoor studio area, 40sqm of outdoor studio area, make-up room, hairdresser, wardrobe"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [59.33837, 18.05685]
+        "coordinates": [48.855, 2.299]
       }
     }
   ]

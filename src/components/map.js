@@ -13,8 +13,8 @@ function GoogleMaps() {
   const [selectedMarker, setSelectedMarker] = useState(null)
   return (
     <GoogleMap
-      defaultZoom={13}
-      defaultCenter={{ lat: 59.335, lng: 18.06 }}
+      defaultZoom={12}
+      defaultCenter={{ lat: 48.86, lng: 2.337 }}
       defaultOptions={{ styles: mapStyles }}
     >
       {markerData.features.map(office => (
@@ -28,8 +28,9 @@ function GoogleMaps() {
             setSelectedMarker(office)
           }}
           icon={{
+            // do not forget to put the svg marker file in the /public folder
             url: "/marker.svg",
-            scaledSize: new window.google.maps.Size(50, 50),
+            scaledSize: new window.google.maps.Size(40, 40),
           }}
         />
       ))}
@@ -45,10 +46,8 @@ function GoogleMaps() {
           }}
         >
           <div>
-            <h3>{selectedMarker.properties.NAME}</h3>
-            <p>{selectedMarker.properties.ADDRESS}</p>
-            <p>{selectedMarker.properties.NOTES}</p>
-            <p>{selectedMarker.properties.FACILITY}</p>
+            <h3>{selectedMarker.properties.ADDRESS}</h3>
+            <p>{selectedMarker.properties.NAME}</p>
           </div>
         </InfoWindow>
       )}
@@ -60,15 +59,17 @@ const WrappedMap = withScriptjs(withGoogleMap(GoogleMaps))
 
 export default function Map() {
   return (
-    <div className="map">
-      <div style={{ width: "800px", height: "400px" }}>
-        <WrappedMap
-          isMarkerShown
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.GOOGLE_KEY}`}
-          loadingElement={<div style={{ height: "400px" }} />}
-          containerElement={<div style={{ height: "400px" }} />}
-          mapElement={<div style={{ height: "400px" }} />}
-        />
+    <div className="container">
+      <div className="map">
+        <div style={{ width: "700px", height: "400px" }}>
+          <WrappedMap
+            isMarkerShown
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.GOOGLE_KEY}`}
+            loadingElement={<div style={{ height: "400px" }} />}
+            containerElement={<div style={{ height: "400px" }} />}
+            mapElement={<div style={{ height: "400px" }} />}
+          />
+        </div>
       </div>
     </div>
   )

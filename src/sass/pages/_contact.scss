@@ -1,11 +1,11 @@
-#stack {
+#contact {
   background-color: colour(oyster);
   height: 80vh;
 
   .container {
     position: relative;
 
-    .stack-section {
+    .contact-section {
       .title {
         font-family: font(helvetica);
         font-size: 5rem;
@@ -24,14 +24,29 @@
         top: 35rem;
         left: 60rem;
       }
+    }
 
-      ul {
-        padding: 10rem 0;
-
-        li {
-          list-style: none;
-          font-size: 3rem;
+    .map {
+      // Google maps marker bubble
+      .gm-style {
+        .gm-style-iw-c {
+          top: -4rem;
         }
+
+        .gm-style-iw-t {
+          &:after {
+            top: -4rem;
+          }
+        }
+      }
+
+      h3 {
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 0.5rem;
       }
     }
   }

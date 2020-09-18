@@ -3,7 +3,7 @@
 /* ---------------------------
 $  1. CONFIGURATION & HELPERS
  ----------------------------*/
-@import "abstracts/functions";
+@import "abstracts/functions", "abstracts/queries";
 
 /* ---------------------------
 $  2. VENDORS
@@ -18,7 +18,7 @@ $  3. BASE STUFF
 /* ---------------------------
 $  4. LAYOUT
  ----------------------------*/
-@import "layout/nav";
+@import "layout/nav", "layout/footer";
 
 /* ---------------------------
 $  5. COMPONENTS
@@ -27,4 +27,5 @@ $  5. COMPONENTS
 /* ---------------------------
 $  6. PAGES
  ----------------------------*/
-@import "pages/banner", "pages/about", "pages/stack", "pages/projects";
+@import "pages/banner", "pages/about", "pages/stack", "pages/projects",
+  "pages/contact";

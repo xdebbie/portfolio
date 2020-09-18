@@ -1,12 +1,15 @@
 #about {
   background-color: colour(bazaar);
   height: 80vh;
+  margin: 0;
+  padding: 0;
 
   .container {
     position: relative;
 
     .about-section {
       .title {
+        font-family: font(helvetica);
         font-size: 5rem;
         position: absolute;
         top: 1rem;

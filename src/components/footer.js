@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
       <div className="footer">
         <div className="inner">
-          <span>© 2020 Hannah Senesh</span>
+          <span>© 2020 kotka</span>
           <div className="socials">
             <a href="#">
               <img src={twitter} alt="Twitter" />
@@ -40,7 +40,7 @@ const Footer = () => {
               <img src={instagram} alt="Instagram" />
             </a>
           </div>
-          <span>letscreate@hannahsenesh.com</span>
+          <span>deborah@asia.com</span>
         </div>
       </div>
     </footer>

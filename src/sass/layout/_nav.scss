@@ -29,6 +29,10 @@ header {
         transition: all 200ms ease-out;
         font-size: font-size(logo);
 
+        &:link {
+          color: colour(cod-gray);
+        }
+
         &:visited {
           color: colour(cod-gray);
         }
@@ -38,7 +42,7 @@ header {
         }
 
         &:hover {
-          color: colour(santa-fe);
+          color: colour(bazaar);
         }
 
         &:active {
@@ -64,6 +68,10 @@ header {
             margin-right: 0;
           }
 
+          &:link {
+            color: colour(cod-gray);
+          }
+
           &:visited {
             color: colour(cod-gray);
           }
@@ -73,7 +81,7 @@ header {
           }
 
           &:hover {
-            color: colour(santa-fe);
+            color: colour(bazaar);
           }
 
           &:active {

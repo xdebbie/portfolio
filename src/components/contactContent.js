@@ -15,8 +15,7 @@ const Contact = () => {
             </p>
             <div className="address">
               <div>
-                <p>Kungsklippan 3, 11224</p>
-                <p>Stockholm, Sverige</p>
+                <p>Paris, France</p>
               </div>
             </div>
           </div>

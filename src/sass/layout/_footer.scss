@@ -3,5 +3,8 @@ $  FOOTER
  --------------------------------------------*/
 
 footer {
+  display: flex;
+  flex-direction: row;
   background-color: colour(cowboy);
+  height: 20vh;
 }

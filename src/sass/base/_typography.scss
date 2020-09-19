@@ -14,10 +14,6 @@ $  related components, etc.
 $  FONT-FAMILY 
  --------------------------------------------*/
 $fonts: (
-  headline: (
-    "Tiempos Headline",
-    serif,
-  ),
   helvetica: (
     "Helvetica Neue",
     -apple-system,
@@ -31,6 +27,7 @@ $fonts: (
     "Helvetica Neue",
     sans-serif,
   ),
+  metric: (),
 );
 
 @function font($font-name) {

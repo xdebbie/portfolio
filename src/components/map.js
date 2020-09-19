@@ -29,7 +29,7 @@ function GoogleMaps() {
           }}
           icon={{
             // do not forget to put the svg marker file in the /public folder
-            url: "/svg/marker.svg",
+            url: "../svg/marker.svg",
             scaledSize: new window.google.maps.Size(40, 40),
           }}
         />

@@ -36,6 +36,15 @@ module.exports = {
         allowList: ["GOOGLE_KEY"],
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Metric"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

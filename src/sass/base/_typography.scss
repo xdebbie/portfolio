@@ -27,7 +27,10 @@ $fonts: (
     "Helvetica Neue",
     sans-serif,
   ),
-  metric: (),
+  metric: (
+    "Metric",
+    serif,
+  ),
 );
 
 @function font($font-name) {

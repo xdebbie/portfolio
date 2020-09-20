@@ -11,12 +11,16 @@ const Projects = () => {
             <h1>/projects</h1>
           </div>
           <ul>
-            <li>React</li>
-            <li>GraphQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Sass/SCSS</li>
-            <li>JavaScript</li>
+            <li>
+              Page under construction - in the meanwhile, please check my
+              projects out on my
+              <div className="url--bg">
+                <a href="https://makerslate.io/deborah" className="url--hov">
+                  makerslate
+                </a>
+              </div>
+              .
+            </li>
           </ul>
         </div>
       </div>

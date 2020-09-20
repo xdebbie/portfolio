@@ -16,7 +16,7 @@ const About = () => {
             Estonia, the UK and France.
           </p>
           <p>
-            I (probabaly) speak your language! I have had studies on English,
+            I (probabaly) speak your language! I have done studies on English,
             Spanish, Portuguese, Italian, Catalan, French, Swedish, Danish,
             Finnish, Estonian, Russian and Romanian. I am also comfortable
             working with a variety of languages and alphabets including

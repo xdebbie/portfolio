@@ -27,6 +27,7 @@
 
       ul {
         padding: 10rem 0;
+        max-width: 40rem;
 
         li {
           list-style: none;
@@ -34,5 +35,26 @@
         }
       }
     }
+  }
+}
+
+.url--bg {
+  background: transparent;
+  height: 40px;
+  width: max-content;
+  margin: 0 auto;
+  &:hover {
+    background: greenyellow;
+    transition: all 0.3s ease-out;
+  }
+}
+.url--hov {
+  position: relative;
+  top: 5px;
+  color: #e46f5b;
+  font-weight: 700;
+  padding: 0 8px;
+
+  &:hover {
   }
 }

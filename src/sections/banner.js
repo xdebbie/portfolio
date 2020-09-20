@@ -39,14 +39,14 @@ const Banner = () => {
           </p>
         </div>
         <div className="attributes">
-          <h2>This is what you get with me...</h2>
+          <h2>This is what you will get with me... look no further!</h2>
           <ul>
             <li>
               <img src={aesthetic} className="att-icons" alt="aesthetic" />
               <p className="att-title">Aesthetic</p>
               <p>
                 I like it pretty, that is non-negotiable! And your customers
-                will like it too.
+                will like it too
               </p>
             </li>
             <li>
@@ -90,14 +90,12 @@ const Banner = () => {
               />
               <p>Responsiveness</p>
               <p>
-                Mobile, tablet, desktop, super-large screens? I've got your
-                back.
+                Mobile, tablet, desktop, super-large screens? I've got your back
               </p>
             </li>
           </ul>
         </div>
       </div>
-      <div className="fixed-misc">Front end web developer</div>
     </div>
   )
 }

@@ -9,6 +9,7 @@ header {
   top: 0px;
   z-index: 1;
   background-color: colour(oyster);
+  transition: all 400ms ease-out;
 
   .inner-header {
     display: flex;

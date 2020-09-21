@@ -46,3 +46,114 @@ body {
   max-width: 1280px;
   margin: 0 auto;
 }
+
+/**
+ * Dark mode styles
+ */
+body.dark {
+  -webkit-font-smoothing: antialiased;
+  color: colour(bonjour);
+
+  // Nav
+  header {
+    background-color: colour(onyx);
+
+    .inner-header {
+      color: colour(bonjour);
+
+      .logo {
+        a {
+          &:link {
+            color: colour(bonjour);
+          }
+
+          &:visited {
+            color: colour(bonjour);
+          }
+
+          &:focus {
+            color: colour(bonjour);
+          }
+
+          &:hover {
+            color: colour(bittersweet);
+          }
+
+          &:active {
+            color: colour(bonjour);
+          }
+        }
+      }
+
+      .navigation {
+        nav {
+          a {
+            &:link {
+              color: colour(bonjour);
+            }
+
+            &:visited {
+              color: colour(bonjour);
+            }
+
+            &:focus {
+              color: colour(bonjour);
+            }
+
+            &:hover {
+              color: colour(bittersweet);
+            }
+
+            &:active {
+              color: colour(bonjour);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .title {
+    color: colour(bonjour);
+  }
+
+  #banner {
+    background-color: colour(onyx);
+
+    .attributes {
+      background-color: colour(russian);
+
+      ul {
+        li {
+          color: colour(cod-gray);
+          background-color: colour(aluminium);
+          box-shadow: 5px 10px 3px 1px colour(bonjour);
+
+          &:hover {
+            box-shadow: 2px 5px 3px 1px colour(bittersweet);
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    background-color: colour(russian);
+  }
+
+  #stack {
+    background-color: colour(onyx);
+  }
+
+  #projects {
+    background-color: colour(russian);
+  }
+
+  #contact {
+    background-color: colour(onyx);
+  }
+
+  footer {
+    background-color: colour(russian);
+  }
+}

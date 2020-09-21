@@ -3,6 +3,7 @@ $  FOOTER
  --------------------------------------------*/
 
 footer {
+  transition: all 400ms ease-out;
   display: flex;
   flex-direction: row;
   background-color: colour(cowboy);

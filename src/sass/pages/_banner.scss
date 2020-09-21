@@ -1,9 +1,10 @@
 #banner {
   background-color: colour(oyster);
-  height: 138vh;
+  transition: all 400ms ease-out;
 
   .container {
     position: relative;
+    padding-bottom: 7rem;
 
     .image-left {
       .profile-image {
@@ -45,6 +46,7 @@
       font-size: 5rem;
       background-color: colour(prim);
       border-radius: 10px;
+      transition: 400ms ease-out all;
 
       h2 {
         font-size: 3rem;

@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { Component } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 class Nav extends Component {
   getNavList = ({ mobile = false }) => (
@@ -28,6 +29,20 @@ class Nav extends Component {
               <AnchorLink href="#stack">Stack</AnchorLink>
               <AnchorLink href="#projects">Projects</AnchorLink>
               <AnchorLink href="#contact">Contact</AnchorLink>
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <label>
+                    <input
+                      type="checkbox"
+                      onChange={e =>
+                        toggleTheme(e.target.checked ? "dark" : "light")
+                      }
+                      checked={theme === "dark"}
+                    />{" "}
+                    Dark mode
+                  </label>
+                )}
+              </ThemeToggler>
             </nav>
           </div>
         </div>

@@ -1,11 +1,14 @@
 #projects {
   background-color: colour(bazaar);
+  transition: all 400ms ease-out;
   height: 80vh;
 
   .container {
     position: relative;
 
     .projects-section {
+      padding-top: 12rem;
+
       .title {
         font-family: font(helvetica);
         font-size: 5rem;
@@ -21,12 +24,9 @@
       p {
         max-width: 60rem;
         font-size: 3rem;
-        top: 35rem;
-        left: 60rem;
       }
 
       ul {
-        padding: 10rem 0;
         max-width: 40rem;
 
         li {
@@ -38,11 +38,12 @@
   }
 }
 
-.url--bg {
+span {
   background: transparent;
   height: 40px;
   width: max-content;
   margin: 0 auto;
+
   &:hover {
     background: greenyellow;
     transition: all 0.3s ease-out;

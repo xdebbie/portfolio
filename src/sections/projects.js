@@ -14,11 +14,11 @@ const Projects = () => {
             <li>
               Page under construction - in the meanwhile, please check my
               projects out on my
-              <div className="url--bg">
+              <span>
                 <a href="https://makerslate.io/deborah" className="url--hov">
                   makerslate
                 </a>
-              </div>
+              </span>
               .
             </li>
           </ul>

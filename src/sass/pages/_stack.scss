@@ -1,11 +1,14 @@
 #stack {
   background-color: colour(oyster);
+  transition: all 400ms ease-out;
   height: 80vh;
 
   .container {
     position: relative;
 
     .stack-section {
+      padding-top: 12rem;
+
       .title {
         font-family: font(helvetica);
         font-size: 5rem;
@@ -21,13 +24,9 @@
       p {
         max-width: 60rem;
         font-size: 3rem;
-        top: 35rem;
-        left: 60rem;
       }
 
       ul {
-        padding: 10rem 0;
-
         li {
           list-style: none;
           font-size: 3rem;

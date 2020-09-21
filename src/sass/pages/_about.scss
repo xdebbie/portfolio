@@ -1,6 +1,6 @@
 #about {
   background-color: colour(bazaar);
-  height: 80vh;
+  transition: all 400ms ease-out;
   margin: 0;
   padding: 0;
 
@@ -8,6 +8,8 @@
     position: relative;
 
     .about-section {
+      padding-top: 12rem;
+
       .title {
         font-family: font(helvetica);
         font-size: 5rem;
@@ -24,8 +26,11 @@
         font-family: font(metric);
         max-width: 60rem;
         font-size: 3rem;
-        top: 35rem;
-        left: 60rem;
+      }
+
+      .education,
+      .programming {
+        padding-bottom: 4rem;
       }
     }
   }

@@ -90,7 +90,8 @@ const Banner = () => {
               />
               <p>Responsiveness</p>
               <p>
-                Mobile, tablet, desktop, super-large screens? I've got your back
+                Mobile, tablet, desktop, super-large screens, dark mode? I've
+                got your back
               </p>
             </li>
           </ul>

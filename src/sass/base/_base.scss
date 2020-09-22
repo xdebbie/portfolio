@@ -127,10 +127,10 @@ body.dark {
         li {
           color: colour(cod-gray);
           background-color: colour(aluminium);
-          box-shadow: 5px 10px 3px 1px colour(bonjour);
+          box-shadow: 5px 10px 3px 1px colour(cod-gray);
 
           &:hover {
-            box-shadow: 2px 5px 3px 1px colour(bittersweet);
+            box-shadow: 2px 5px 3px 1px colour(onyx);
           }
         }
       }

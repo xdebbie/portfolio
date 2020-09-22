@@ -24,13 +24,55 @@
 
       p {
         font-family: font(metric);
-        max-width: 60rem;
+        max-width: 70rem;
         font-size: 3rem;
+        margin-bottom: 2rem;
       }
-
-      .education,
-      .programming {
+      .education {
         padding-bottom: 4rem;
+
+        .text-icons {
+          height: 4rem;
+          width: 4rem;
+        }
+      }
+    }
+
+    .lang {
+      width: 100%;
+      text-align: center;
+      margin: 4rem auto;
+
+      .lang-box {
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0 1rem;
+
+        li {
+          list-style: none;
+          max-width: 20rem;
+          flex-grow: 3;
+          background-color: colour(oyster);
+          border-radius: 10px;
+
+          p {
+            text-transform: uppercase;
+            font-style: italic;
+            margin: 1rem auto 0 auto;
+            background-color: colour(oyster);
+            border-radius: 20px;
+            padding: 1px 10px;
+            text-align: center;
+            width: fit-content;
+          }
+
+          .flags {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
       }
     }
   }

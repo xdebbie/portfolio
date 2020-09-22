@@ -32,9 +32,10 @@ const About = () => {
             <h1>/about</h1>
           </div>
           <p>
-            I am originally from... everywhere and nowhere. My story goes around
-            the USA, Curacao, Argentina, Brazil, Spain, Romania, Estonia, the UK
-            and France.
+            My odd passport says March 29th, 19<span>*censored*</span>,
+            Barcelona, Spain. I am however from... everywhere and nowhere. My
+            story goes around the USA, Curacao, Argentina, Brazil, Spain,
+            Romania, Estonia, the UK and France.
           </p>
           <p>
             I (probabaly) speak your language! I have done studies on English,
@@ -51,6 +52,11 @@ const About = () => {
               <li>
                 <img src={uk} className="flags" alt="uk" />
                 <img src={usa} className="flags" alt="usa" />
+                <span
+                  class="tooltip-toggle"
+                  aria-label="Sample text for your tooltip!"
+                  tabindex="0"
+                ></span>
                 <p>English</p>
               </li>
               <li>

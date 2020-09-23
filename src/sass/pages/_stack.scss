@@ -1,7 +1,6 @@
 #stack {
   background-color: colour(oyster);
   transition: all 400ms ease-out;
-  height: 80vh;
 
   .container {
     position: relative;
@@ -21,15 +20,27 @@
         }
       }
 
-      p {
-        max-width: 60rem;
-        font-size: 3rem;
-      }
+      .stack-boxes {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 13rem;
+        padding-bottom: 6rem;
 
-      ul {
-        li {
-          list-style: none;
+        p {
+          max-width: 60rem;
           font-size: 3rem;
+          text-align: center;
+          font-family: font(metric);
+        }
+
+        ul {
+          li {
+            text-align: center;
+            list-style: none;
+            font-size: 3rem;
+            font-family: font(metric);
+          }
         }
       }
     }

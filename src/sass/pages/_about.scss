@@ -68,17 +68,17 @@
           }
 
           p {
-            transition: 200ms ease-out all;
-            text-transform: uppercase;
+            background-color: colour(bazaar);
+            border-radius: 20px;
+            color: colour(bonjour);
+            font-size: 2.8rem;
             font-style: italic;
             margin: 1rem auto 0 auto;
-            background-color: colour(bazaar);
-            color: colour(bonjour);
-            border-radius: 20px;
             padding: 1px 10px;
             text-align: center;
+            text-transform: uppercase;
+            transition: 200ms ease-out all;
             width: fit-content;
-            font-size: 2.8rem;
           }
 
           .flags {
@@ -86,6 +86,70 @@
             width: 8rem;
           }
         }
+
+        .tooltip-toggle {
+          position: relative;
+
+          // Tooltip text container
+          &::before {
+            position: absolute;
+            top: -6rem;
+            left: 1.5rem;
+            background-color: colour(russian);
+            border-radius: 10px;
+            color: colour(bonjour);
+            // This pulls in the text from the element with the tooltip
+            content: attr(aria-label);
+            padding: 1rem;
+            text-transform: none;
+            transition: all 0.3s ease;
+            width: 160px;
+          }
+
+          // Setting up the transition
+          &:before,
+          &:after {
+            color: colour(bonjour);
+            font-family: monospace;
+            font-size: 2rem;
+            opacity: 0;
+            pointer-events: none;
+            text-align: center;
+          }
+
+          //Triggering the transition
+          &:focus:before,
+          &:focus:after,
+          &:hover:before,
+          &:hover:after {
+            opacity: 1;
+            transition: all 0.75s ease;
+          }
+        }
+      }
+    }
+
+    .education {
+      display: grid;
+      grid-gap: 2.5rem;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 4rem;
+      padding-bottom: 6rem;
+
+      h2 {
+        font-family: font(helvetica);
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: font(metric);
+        max-width: 70rem;
+        font-size: 3rem;
+      }
+
+      .text-icons {
+        height: 4rem;
+        width: 4rem;
       }
     }
   }

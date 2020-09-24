@@ -1,6 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import code from "../images/code.svg"
+import design from "../images/design.svg"
 
 const Stack = () => {
   return (
@@ -11,7 +13,8 @@ const Stack = () => {
             <h1>/stack</h1>
           </div>
           <div className="stack-boxes">
-            <div className="designer">
+            <div className="smaller-box">
+              <img src={design} className="stack-icons" alt="design" />
               <p>Designer</p>
               <ul>
                 <li>UX</li>
@@ -36,15 +39,20 @@ const Stack = () => {
                 <li>Sketch</li>
               </ul>
             </div>
-            <div className="developer">
-              <p>Front end developer</p>
+            <div className="smaller-box">
+              <img src={code} className="stack-icons" alt="code" />
+              <p>Developer</p>
               <ul>
                 <li>React</li>
                 <li>GraphQL</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>Sass/SCSS</li>
+                <li>Sass / Less</li>
                 <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>C++</li>
                 <li>Gatsby</li>
               </ul>
               <p>Dev tools</p>
@@ -57,6 +65,8 @@ const Stack = () => {
                 <li>Gist</li>
                 <li>Terminal</li>
                 <li>Bash</li>
+                <li>Vercel / Netlify / Heroku</li>
+                <li>Contentful / Prismic</li>
               </ul>
             </div>
           </div>

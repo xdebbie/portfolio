@@ -20,6 +20,11 @@
         }
       }
 
+      .profile-image {
+        max-width: 500px;
+        margin-top: 10rem;
+      }
+
       .stack-boxes {
         max-width: 65%;
         display: grid;
@@ -29,26 +34,34 @@
         padding-bottom: 6rem;
 
         .smaller-box {
-          background-color: colour(bazaar);
           border-radius: 10px;
-          padding: 3rem 0;
+          border: 5px solid colour(bazaar);
+          padding: 3rem 0 0 0;
           text-align: center;
+          transition: all 400ms ease-out;
+          display: grid;
+          grid-template-rows: 1fr 0.8fr;
+
+          .stack-sect {
+            grid-row-start: span 1;
+          }
 
           p {
-            max-width: 60rem;
             font-size: 3rem;
             text-align: center;
             font-family: font(metric);
-            background-color: colour(oyster);
+            background-color: colour(cowboy);
             width: fit-content;
+            color: colour(oyster);
             margin: 0 auto 2rem auto;
             border-radius: 10px;
             padding: 2px 10px;
+            border: 5px solid colour(cowboy);
           }
 
           ul {
             &:nth-of-type(1) {
-              margin-bottom: 2rem;
+              margin-bottom: 4rem;
             }
 
             li {
@@ -64,6 +77,14 @@
             width: 80px;
             height: 80px;
             margin-bottom: 3rem;
+            transition: all 0.4s ease;
+          }
+
+          &:hover {
+            .stack-icons {
+              transform: scale(1.2);
+              transition: all 0.4s ease;
+            }
           }
         }
       }

@@ -6,7 +6,6 @@ import creativeBoom from "../images/creative-boom.png"
 import wgsn from "../images/wgsn.png"
 
 // Socials
-import twitter from "../images/twitter.svg"
 import instagram from "../images/instagram.svg"
 
 const featured = [
@@ -33,9 +32,6 @@ const Footer = () => {
         <div className="inner">
           <span>© 2020 kotka</span>
           <div className="socials">
-            <a href="#">
-              <img src={twitter} alt="Twitter" />
-            </a>
             <a href="#">
               <img src={instagram} alt="Instagram" />
             </a>

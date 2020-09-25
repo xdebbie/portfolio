@@ -1,11 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import aesthetic from "../images/manicure.svg"
-import pixelperfect from "../images/pixel.svg"
-import maintainability from "../images/broom.svg"
-import scalability from "../images/lego.svg"
-import responsiveness from "../images/chameleon.svg"
+import Aesthetic from "../assets/manicure.svg"
+import Pixelperfect from "../assets/pixel.svg"
+import Maintainability from "../assets/broom.svg"
+import Scalability from "../assets/lego.svg"
+import Responsiveness from "../assets/chameleon.svg"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -42,7 +42,7 @@ const Banner = () => {
           <h2>This is what you will get with me... look no further!</h2>
           <ul>
             <li>
-              <img src={aesthetic} className="att-icons" alt="aesthetic" />
+              <Aesthetic className="att-icons" alt="aesthetic" />
               <p className="att-title">Aesthetic</p>
               <p>
                 I like it pretty, that is non-negotiable! And your customers
@@ -50,11 +50,7 @@ const Banner = () => {
               </p>
             </li>
             <li>
-              <img
-                src={pixelperfect}
-                className="att-icons"
-                alt="pixel perfect"
-              />
+              <Pixelperfect className="att-icons" alt="pixel perfect" />
               <p>Pixel-perfect</p>
               <p>
                 My OCD will guarantee your designs are always presented
@@ -62,11 +58,7 @@ const Banner = () => {
               </p>
             </li>
             <li>
-              <img
-                src={maintainability}
-                className="att-icons"
-                alt="maintainability"
-              />
+              <Maintainability className="att-icons" alt="maintainability" />
               <p>Maintainability</p>
               <p>
                 Easy to maintain, all my websites come with extensive comments
@@ -75,7 +67,7 @@ const Banner = () => {
               </p>
             </li>
             <li>
-              <img src={scalability} className="att-icons" alt="scalability" />
+              <Scalability className="att-icons" alt="scalability" />
               <p>Scalability</p>
               <p>
                 Structured in a smart way, it is really simple to just add a new
@@ -83,11 +75,7 @@ const Banner = () => {
               </p>
             </li>
             <li>
-              <img
-                src={responsiveness}
-                className="att-icons"
-                alt="responsiveness"
-              />
+              <Responsiveness className="att-icons" alt="responsiveness" />
               <p>Responsiveness</p>
               <p>
                 Mobile, tablet, desktop, super-large screens, dark mode? I've

@@ -13,12 +13,10 @@ const Projects = () => {
           <ul>
             <li>
               Page under construction - in the meanwhile, please check my
-              projects out on my
-              <span>
-                <a href="https://makerslate.io/deborah" className="url--hov">
-                  makerslate
-                </a>
-              </span>
+              projects out on my{" "}
+              <a href="https://makerslate.io/deborah" className="links">
+                makerslate
+              </a>
               .
             </li>
           </ul>

@@ -1,27 +1,27 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import pencil from "../images/pencil.svg"
-import albania from "../images/flags/albania.svg"
-import argentina from "../images/flags/argentina.svg"
-import brazil from "../images/flags/brazil.svg"
-import bulgaria from "../images/flags/bulgaria.svg"
-import denmark from "../images/flags/denmark.svg"
-import estonia from "../images/flags/estonia.svg"
-import finland from "../images/flags/finland.svg"
-import france from "../images/flags/france.svg"
-import israel from "../images/flags/israel.svg"
-import italy from "../images/flags/italy.svg"
-import japan from "../images/flags/japan.svg"
-import norway from "../images/flags/norway.svg"
-import portugal from "../images/flags/portugal.svg"
-import romania from "../images/flags/romania.svg"
-import russia from "../images/flags/russia.svg"
-import spain from "../images/flags/spain.svg"
-import sweden from "../images/flags/sweden.svg"
-import ukraine from "../images/flags/ukraine.svg"
-import uk from "../images/flags/united-kingdom.svg"
-import usa from "../images/flags/united-states.svg"
+import Pencil from "../assets/pencil.svg"
+import Albania from "../assets/flags/albania.svg"
+import Argentina from "../assets/flags/argentina.svg"
+import Brazil from "../assets/flags/brazil.svg"
+import Bulgaria from "../assets/flags/bulgaria.svg"
+import Denmark from "../assets/flags/denmark.svg"
+import Estonia from "../assets/flags/estonia.svg"
+import Finland from "../assets/flags/finland.svg"
+import France from "../assets/flags/france.svg"
+import Israel from "../assets/flags/israel.svg"
+import Italy from "../assets/flags/italy.svg"
+import Japan from "../assets/flags/japan.svg"
+import Norway from "../assets/flags/norway.svg"
+import Portugal from "../assets/flags/portugal.svg"
+import Romania from "../assets/flags/romania.svg"
+import Russia from "../assets/flags/russia.svg"
+import Spain from "../assets/flags/spain.svg"
+import Sweden from "../assets/flags/sweden.svg"
+import Ukraine from "../assets/flags/ukraine.svg"
+import Uk from "../assets/flags/united-kingdom.svg"
+import Usa from "../assets/flags/united-states.svg"
 
 const About = () => {
   return (
@@ -54,8 +54,8 @@ const About = () => {
                 aria-label="Do it do it do it do it do it do it"
                 tabindex="0"
               >
-                <img src={uk} className="flags" alt="uk" />
-                <img src={usa} className="flags" alt="usa" />
+                <Uk className="flags" alt="uk" />
+                <Usa className="flags" alt="usa" />
                 <p>English</p>
               </li>
               <li
@@ -63,8 +63,8 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={argentina} className="flags" alt="argentina" />
-                <img src={spain} className="flags" alt="spain" />
+                <Argentina className="flags" alt="argentina" />
+                <Spain className="flags" alt="spain" />
                 <p>Spanish</p>
               </li>
               <li
@@ -72,7 +72,7 @@ const About = () => {
                 aria-label="L'ocasió s'ha d'agafar pels pèls"
                 tabindex="0"
               >
-                <img src={spain} className="flags" alt="spain" />
+                <Spain className="flags" alt="spain" />
                 <p>Catalan</p>
               </li>
               <li
@@ -80,8 +80,8 @@ const About = () => {
                 aria-label="Antes que eu me esqueça: fora Bolsonaro!"
                 tabindex="0"
               >
-                <img src={portugal} className="flags" alt="portugal" />
-                <img src={brazil} className="flags" alt="brazil" />
+                <Portugal className="flags" alt="portugal" />
+                <Brazil className="flags" alt="brazil" />
                 <p>Portuguese</p>
               </li>
               <li
@@ -89,7 +89,7 @@ const About = () => {
                 aria-label="Cest pas ma faulte"
                 tabindex="0"
               >
-                <img src={france} className="flags" alt="france" />
+                <France className="flags" alt="france" />
                 <p>French</p>
               </li>
               <li
@@ -97,7 +97,7 @@ const About = () => {
                 aria-label="Occidentali karma!"
                 tabindex="0"
               >
-                <img src={italy} className="flags" alt="italy" />
+                <Italy className="flags" alt="italy" />
                 <p>Italian</p>
               </li>
               <li
@@ -105,7 +105,7 @@ const About = () => {
                 aria-label="Ingen fara på taket, jag är här!"
                 tabindex="0"
               >
-                <img src={sweden} className="flags" alt="sweden" />
+                <Sweden className="flags" alt="sweden" />
                 <p>Swedish</p>
               </li>
               <li
@@ -113,7 +113,7 @@ const About = () => {
                 aria-label="Du skød papegøjen, jeg er her! Ansæt mig nu"
                 tabindex="0"
               >
-                <img src={denmark} className="flags" alt="denmark" />
+                <Denmark className="flags" alt="denmark" />
                 <p>Danish</p>
               </li>
               <li
@@ -121,7 +121,7 @@ const About = () => {
                 aria-label="Du kom ikke hele veien for å bare stoppe og snu seg rundt"
                 tabindex="0"
               >
-                <img src={norway} className="flags" alt="norway" />
+                <Norway className="flags" alt="norway" />
                 <p>Norwegian</p>
               </li>
               <li
@@ -129,7 +129,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={estonia} className="flags" alt="estonia" />
+                <Estonia className="flags" alt="estonia" />
                 <p>Estonian</p>
               </li>
               <li
@@ -137,7 +137,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={finland} className="flags" alt="finland" />
+                <Finland className="flags" alt="finland" />
                 <p>Finnish</p>
               </li>
               <li
@@ -145,7 +145,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={romania} className="flags" alt="romania" />
+                <Romania className="flags" alt="romania" />
                 <p>Romanian</p>
               </li>
               <li
@@ -153,7 +153,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={albania} className="flags" alt="albania" />
+                <Albania className="flags" alt="albania" />
                 <p>Albanian</p>
               </li>
               <li
@@ -161,7 +161,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={russia} className="flags" alt="russia" />
+                <Russia className="flags" alt="russia" />
                 <p>Russian</p>
               </li>
               <li
@@ -169,7 +169,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={ukraine} className="flags" alt="ukraine" />
+                <Ukraine className="flags" alt="ukraine" />
                 <p>Ukrainian</p>
               </li>
               <li
@@ -177,7 +177,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={bulgaria} className="flags" alt="bulgaria" />
+                <Bulgaria className="flags" alt="bulgaria" />
                 <p>Bulgarian</p>
               </li>
               <li
@@ -185,7 +185,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={israel} className="flags" alt="israel" />
+                <Israel className="flags" alt="israel" />
                 <p>Hebrew</p>
               </li>
               <li
@@ -193,7 +193,7 @@ const About = () => {
                 aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
                 tabindex="0"
               >
-                <img src={japan} className="flags" alt="japan" />
+                <Japan className="flags" alt="japan" />
                 <p>Japanese</p>
               </li>
             </div>
@@ -203,11 +203,16 @@ const About = () => {
           <h2>Bla bla bla education</h2>
           <p>
             All you need to know about my studies is probably on my{" "}
-            <a href="https://www.linkedin.com/in/deborah-caldeira/">LinkedIn</a>
+            <a
+              href="https://www.linkedin.com/in/deborah-caldeira/"
+              className="links"
+            >
+              LinkedIn
+            </a>
             , so come over and stalk me! And while you are at it, also add me
             and send me a heya! If you are a former client, you are welcome to
             write me a recommendation as well{" "}
-            <img src={pencil} className="text-icons" alt="pencil" />
+            <Pencil className="text-icons" alt="pencil" />
           </p>
         </div>
       </div>

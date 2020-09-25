@@ -11,7 +11,9 @@ const Contact = () => {
           <div className="info">
             <p>Don't be shy, hit me up!</p>
             <p>
-              Deborah <span>deborah@asia.com</span>
+              <a href="deborah@asia.com" className="links">
+                email
+              </a>
             </p>
             <div className="address">
               <div>

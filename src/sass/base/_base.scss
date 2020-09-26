@@ -52,7 +52,7 @@ body {
   color: colour(onyx);
   box-sizing: border-box;
   box-shadow: inset 0 -10px 0 colour(egg);
-  transition: 0.1s all ease-out;
+  transition: 0.3s all ease-out;
 
   &:hover {
     box-shadow: inset 0 -100px 0 colour(egg);
@@ -220,6 +220,10 @@ body.dark {
 
   #contact {
     background-color: colour(onyx);
+
+    .map {
+      color: colour(onyx);
+    }
   }
 
   footer {

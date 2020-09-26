@@ -1,43 +1,32 @@
 import React from "react"
-
-// Featured companies
-import vogue from "../images/vogue.png"
-import creativeBoom from "../images/creative-boom.png"
-import wgsn from "../images/wgsn.png"
+import { Link } from "gatsby"
 
 // Socials
-import instagram from "../images/instagram.svg"
-
-const featured = [
-  { name: "Vogue", image: vogue },
-  { name: "CreativeBoom", image: creativeBoom },
-  { name: "WGSN", image: wgsn },
-]
+import Linkedin from "../assets/linkedin.svg"
+import Github from "../assets/github.svg"
+import Medium from "../assets/medium.svg"
+import Makerslate from "../assets/makerslate.svg"
 
 const Footer = () => {
   return (
     <footer>
-      <div className="featured-companies">
-        <div className="container">
-          <ul>
-            {featured.map(({ name, image }) => (
-              <li key="name">
-                <img src={image} alt={name} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
       <div className="footer">
-        <div className="inner">
-          <span>© 2020 kotka</span>
-          <div className="socials">
-            <a href="#">
-              <img src={instagram} alt="Instagram" />
-            </a>
-          </div>
-          <span>deborah@asia.com</span>
+        <span>© 2020 kotka</span>
+        <div className="socials">
+          <Link to="https://linkedin.com/in/deborah-caldeira">
+            <Linkedin className="footer-icons linkedin" alt="linkedin" />
+          </Link>
+          <Link to="https://github.com/xdebbie">
+            <Github className="footer-icons github" alt="github" />
+          </Link>
+          <Link to="https://medium.com/@ithos">
+            <Medium className="footer-icons medium" alt="medium" />
+          </Link>
+          <Link to="https://makerslate.io/deborah">
+            <Makerslate className="footer-icons makerslate" alt="makerslate" />
+          </Link>
         </div>
+        <span>deborah@asia.com</span>
       </div>
     </footer>
   )

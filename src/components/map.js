@@ -61,7 +61,7 @@ export default function Map() {
   return (
     <div className="container">
       <div className="map">
-        <div style={{ width: "700px", height: "400px" }}>
+        <div className="map-dimensions">
           <WrappedMap
             isMarkerShown
             googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.GOOGLE_KEY}`}

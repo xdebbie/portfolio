@@ -11,22 +11,21 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer">
-        <span>© 2020 kotka</span>
         <div className="socials">
-          <Link to="https://linkedin.com/in/deborah-caldeira">
-            <Linkedin className="footer-icons linkedin" alt="linkedin" />
-          </Link>
           <Link to="https://github.com/xdebbie">
             <Github className="footer-icons github" alt="github" />
           </Link>
+          <Link to="https://linkedin.com/in/deborah-caldeira">
+            <Linkedin className="footer-icons linkedin" alt="linkedin" />
+          </Link>
           <Link to="https://medium.com/@ithos">
-            <Medium className="footer-icons medium" alt="medium" />
+            <Medium className="footer-icons" alt="medium" />
           </Link>
           <Link to="https://makerslate.io/deborah">
-            <Makerslate className="footer-icons makerslate" alt="makerslate" />
+            <Makerslate className="footer-icons" alt="makerslate" />
           </Link>
         </div>
-        <span>deborah@asia.com</span>
+        <p>© 2020 kotka&bowie</p>
       </div>
     </footer>
   )

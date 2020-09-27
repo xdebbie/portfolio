@@ -228,5 +228,16 @@ body.dark {
 
   footer {
     background-color: colour(russian);
+
+    .footer-icons {
+      &:hover {
+        fill: colour(bittersweet);
+        stroke: colour(bittersweet);
+      }
+    }
+
+    p {
+      color: colour(bonjour);
+    }
   }
 }

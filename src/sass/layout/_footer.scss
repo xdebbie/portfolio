@@ -7,27 +7,37 @@ footer {
   display: flex;
   flex-direction: row;
   background-color: colour(bazaar);
-  height: 15vh;
+  height: 14vh;
   text-align: center;
 
   .footer {
     margin: 0 auto;
     text-align: center;
 
-    .socials {
-      .footer-icons {
-        margin: 2rem 1rem;
-        fill: colour(onyx);
-        stroke: colour(onyx);
-        transition: 300ms all ease-out;
-        width: 50px;
-        height: auto;
+    p {
+      font-family: font(helvetica);
+      font-size: 1.4rem;
+      color: colour(onyx);
+    }
 
-        &:hover {
-          transition: 300ms all ease-out;
-          fill: colour(egg);
-          stroke: colour(egg);
-        }
+    .footer-icons.linkedin,
+    .footer-icons.github {
+      height: auto;
+      width: 45px;
+    }
+
+    .footer-icons {
+      margin: 2rem 1rem;
+      fill: colour(onyx);
+      stroke: colour(onyx);
+      transition: 300ms all ease-out;
+      width: 40px;
+      height: auto;
+
+      &:hover {
+        transition: 300ms all ease-out;
+        fill: colour(egg);
+        stroke: colour(egg);
       }
     }
   }

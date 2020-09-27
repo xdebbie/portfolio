@@ -3,12 +3,12 @@
   <a href="https://deborah.vercel.app">
     <img alt="Vercel" src="https://badgen.net/badge/vercel/deployed/ff4366/?icon=zeit&scale=1.1" />
   </a>
-    <a href="https://portfolio-hannah-senesh.netlify.app">
+    <a href="https://debdev.netlify.app">
     <img alt="Netlify" src="https://badgen.net/badge/netlify/deployed/ff4366/?icon=packagephobia&scale=1.1" />
   </a>
   <img alt="Codeclimate lines of code" src="https://badgen.net/codeclimate/loc/xdebbie/portfolio/?color=84004e&icon=codeclimate&scale=1.2" />
   <img alt="Codeclimate technical debt" src="https://badgen.net/codeclimate/tech-debt/xdebbie/portfolio/?color=84004e&icon=codeclimate&scale=1.2" />
-  <img alt="Deepscan grade" src="https://badgen.net/deepscan/grade/team/10083/project/12769/branch/202170?color=84004e&icon=deepscan&scale=1.2" />
+  <br>
   <img alt="Code" src="https://badgen.net/badge/code/javascript/purple/?icon=terminal&scale=1.2" />
   <img alt="Code" src="https://badgen.net/badge/code/react.js/purple/?icon=terminal&scale=1.2" />
   <img alt="Code" src="https://badgen.net/badge/code/gatsby/purple/?icon=terminal&scale=1.2" />

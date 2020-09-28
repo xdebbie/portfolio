@@ -5,6 +5,18 @@ import Code from "../assets/code.svg"
 import Design from "../assets/design.svg"
 
 const Stack = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      stack: file(relativePath: { eq: "stack.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 900, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div id="stack">
       <div className="container">
@@ -12,7 +24,12 @@ const Stack = () => {
           <div className="title">
             <h1>/stack</h1>
           </div>
-          <div className="stack-image"></div>
+          <div className="stack-bowie">
+            <div className="stack-image">
+              <Img fluid={data.stack.childImageSharp.fluid} alt="stack" />
+            </div>
+            <p>My secretary, Bowie</p>
+          </div>
           <div className="stack-boxes">
             <div className="smaller-box">
               <div className="stack-sect">

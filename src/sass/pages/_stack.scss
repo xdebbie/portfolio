@@ -20,9 +20,25 @@
         }
       }
 
-      .profile-image {
-        max-width: 500px;
-        margin-top: 10rem;
+      .stack-bowie {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+
+        .stack-image {
+          max-width: 830px;
+          margin-top: 10rem;
+
+          img {
+            width: 830px;
+            border-radius: 10px;
+          }
+        }
+
+        p {
+          font-family: font(helvetica);
+          font-size: 2rem;
+          align-self: flex-end;
+        }
       }
 
       .stack-boxes {

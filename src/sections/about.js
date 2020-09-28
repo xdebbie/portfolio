@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 import Pencil from "../assets/pencil.svg"
 import Albania from "../assets/flags/albania.svg"
@@ -32,10 +32,9 @@ const About = () => {
             <h1>/about</h1>
           </div>
           <p>
-            My odd passport says March 29th, 19<span>*censored*</span>,
-            Barcelona, Spain. I am however from... everywhere and nowhere. My
-            story goes around the USA, Curacao, Argentina, Brazil, Spain,
-            Romania, Estonia, the UK and France.
+            I am from everywhere and nowhere. I have been around the USA,
+            Curacao, Argentina, Brazil, Spain, Romania, Estonia, the UK, and I
+            have chosen France to settle down.
           </p>
           <p>
             I (probabaly) speak your language! I have done studies on English,
@@ -44,7 +43,12 @@ const About = () => {
             working with a variety of languages and alphabets including
             Cyrillic, the Ktav Ashuri, Kanji, Hiragana and Katakana - so don't
             be shy to ask me to develop your website in Russian, Hebrew or
-            Japanese! I am also available for content writing.
+            Japanese! I am also available for{" "}
+            <Link to="https://www.medium.com/@ithos" className="links">
+              {" "}
+              content writing
+            </Link>
+            .
           </p>
 
           <ul className="lang">

@@ -5,18 +5,6 @@ import Code from "../assets/code.svg"
 import Design from "../assets/design.svg"
 
 const Stack = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      deb: file(relativePath: { eq: "deb1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <div id="stack">
       <div className="container">
@@ -24,9 +12,7 @@ const Stack = () => {
           <div className="title">
             <h1>/stack</h1>
           </div>
-          <div className="profile-image">
-            <Img fluid={data.deb.childImageSharp.fluid} />
-          </div>
+          <div className="stack-image"></div>
           <div className="stack-boxes">
             <div className="smaller-box">
               <div className="stack-sect">

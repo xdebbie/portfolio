@@ -87,7 +87,7 @@
             width: 8rem;
           }
         }
-
+        /*
         .tooltip-toggle {
           position: relative;
 
@@ -127,6 +127,7 @@
             transition: all 0.75s ease;
           }
         }
+        */
       }
     }
 
@@ -146,6 +147,8 @@
         font-family: font(metric);
         max-width: 70rem;
         font-size: 3rem;
+        line-height: 3.8rem;
+        text-align: right;
       }
 
       .text-icons {

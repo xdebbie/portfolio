@@ -21,9 +21,12 @@
       .title {
         font-family: font(helvetica);
         font-size: 6rem;
-        position: absolute;
-        top: 20rem;
-        right: 0;
+
+        @include tablet {
+          position: absolute;
+          top: 20rem;
+          right: 0;
+        }
 
         span {
           font-weight: bold;
@@ -34,10 +37,13 @@
         font-family: font(metric);
         max-width: 50rem;
         font-size: 3rem;
-        position: absolute;
         text-align: right;
-        top: 35rem;
-        right: 0;
+
+        @include tablet {
+          position: absolute;
+          top: 35rem;
+          right: 0;
+        }
       }
     }
 

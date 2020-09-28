@@ -60,7 +60,7 @@ const About = () => {
               </li>
               <li
                 class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
+                aria-label="[cries in Spanish]"
                 tabindex="0"
               >
                 <Argentina className="flags" alt="argentina" />
@@ -84,19 +84,11 @@ const About = () => {
                 <Brazil className="flags" alt="brazil" />
                 <p>Portuguese</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Cest pas ma faulte"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <France className="flags" alt="france" />
                 <p>French</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Occidentali karma!"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Italy className="flags" alt="italy" />
                 <p>Italian</p>
               </li>
@@ -124,75 +116,39 @@ const About = () => {
                 <Norway className="flags" alt="norway" />
                 <p>Norwegian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Estonia className="flags" alt="estonia" />
                 <p>Estonian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Finland className="flags" alt="finland" />
                 <p>Finnish</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Romania className="flags" alt="romania" />
                 <p>Romanian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Albania className="flags" alt="albania" />
                 <p>Albanian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Russia className="flags" alt="russia" />
                 <p>Russian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Ukraine className="flags" alt="ukraine" />
                 <p>Ukrainian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Bulgaria className="flags" alt="bulgaria" />
                 <p>Bulgarian</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Israel className="flags" alt="israel" />
                 <p>Hebrew</p>
               </li>
-              <li
-                class="tooltip-toggle"
-                aria-label="Yo habia puesto una rata morida aqui... y ya no esta"
-                tabindex="0"
-              >
+              <li class="tooltip-toggle" aria-label="#" tabindex="0">
                 <Japan className="flags" alt="japan" />
                 <p>Japanese</p>
               </li>

@@ -23,11 +23,11 @@
       }
 
       p {
-        font-family: font(metric);
+        font-family: font(alegreya);
         max-width: 70rem;
         font-size: 3rem;
         margin-bottom: 2rem;
-        line-height: 3.5rem;
+        line-height: 4rem;
       }
     }
 
@@ -47,7 +47,7 @@
           max-width: 20rem;
           background-color: colour(oyster);
           border-radius: 10px;
-          padding: 1.2rem 1rem;
+          padding: 0.8rem;
           box-shadow: 5px 10px 3px 1px colour(cowboy);
           transition: 200ms ease-out all;
 
@@ -57,6 +57,7 @@
             p {
               background-color: colour(russian);
               color: colour(bonjour);
+              border: 3px solid colour(russian);
             }
           }
 
@@ -64,15 +65,15 @@
             background-color: colour(bazaar);
             border-radius: 20px;
             color: colour(bonjour);
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             border: 3px solid colour(bazaar);
-            font-style: italic;
-            margin: 1rem auto 0 auto;
+            margin: 0.6rem auto 0 auto;
             padding: 1px 10px;
             text-align: center;
             text-transform: uppercase;
             transition: 200ms ease-out all;
             width: fit-content;
+            font-family: font(helvetica);
           }
 
           .flags {
@@ -137,10 +138,10 @@
       }
 
       p {
-        font-family: font(metric);
+        font-family: font(alegreya);
         max-width: 70rem;
         font-size: 3rem;
-        line-height: 3.8rem;
+        line-height: 4rem;
         text-align: right;
       }
 

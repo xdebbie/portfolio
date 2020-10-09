@@ -21,9 +21,6 @@
       }
 
       .stack-bowie {
-        display: grid;
-        grid-template-columns: 4fr 2fr;
-
         .stack-image {
           max-width: 830px;
           margin-top: 10rem;
@@ -35,9 +32,9 @@
         }
 
         p {
-          font-family: font(helvetica);
+          font-family: font(alegreya);
           font-size: 2rem;
-          align-self: flex-end;
+          margin: 2rem 0;
         }
       }
 
@@ -63,9 +60,11 @@
           }
 
           p {
-            font-size: 3rem;
+            font-size: 2.6rem;
             text-align: center;
-            font-family: font(metric);
+            font-weight: bold;
+            font-family: font(helvetica);
+            text-transform: uppercase;
             background-color: colour(cowboy);
             width: fit-content;
             color: colour(oyster);
@@ -83,9 +82,10 @@
             li {
               text-align: center;
               list-style: none;
-              font-size: 3rem;
-              font-family: font(metric);
-              margin: 1rem auto;
+              font-size: 2rem;
+              font-family: font(helvetica);
+              margin: 1.2rem auto;
+              text-transform: uppercase;
             }
           }
 

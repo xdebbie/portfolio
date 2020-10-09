@@ -21,11 +21,14 @@
       }
 
       .info {
+        font-family: font(alegreya);
         margin-top: 3rem;
+
         p {
           max-width: 60rem;
           font-size: 3rem;
           margin-bottom: 1rem;
+          line-height: 4rem;
         }
       }
 
@@ -53,11 +56,11 @@
 
       h3 {
         text-transform: uppercase;
-        margin-bottom: 0.5rem;
+        margin: 0.5rem;
       }
 
       p {
-        margin-bottom: 0.5rem;
+        margin: 0.5rem;
       }
 
       .map-dimensions {

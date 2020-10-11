@@ -4,12 +4,20 @@
 
   .container {
     position: relative;
-    padding-bottom: 7rem;
+    padding: 0 2rem 7rem 2rem;
+
+    @include tablet {
+      padding: 0 0 7rem 0;
+    }
 
     .image-left {
       .profile-image {
         max-width: 520px;
-        padding: 15rem 0 5rem 0;
+        padding: 10rem 0 3rem 0;
+
+        @include tablet {
+          padding: 15rem 0 5rem 0;
+        }
 
         img {
           border-radius: 7px;
@@ -21,11 +29,13 @@
       .title {
         font-family: font(helvetica);
         font-size: 6rem;
+        margin-bottom: 2rem;
 
-        @include tablet {
+        @include desktop {
           position: absolute;
           top: 20rem;
           right: 0;
+          margin-bottom: 0;
         }
 
         span {
@@ -36,12 +46,14 @@
       p {
         font-family: font(alegreya);
         max-width: 50rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 4rem;
-        text-align: right;
+        text-align: left;
 
-        @include tablet {
+        @include desktop {
           position: absolute;
+          text-align: right;
+          font-size: 3rem;
           top: 35rem;
           right: 0;
         }
@@ -54,28 +66,49 @@
       background-color: colour(prim);
       border-radius: 10px;
       transition: 400ms ease-out all;
+      margin-top: 4rem;
+      padding-bottom: 3rem;
+
+      @include tablet {
+        margin-top: 0;
+        padding-bottom: 0;
+      }
 
       h2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: normal;
         text-align: center;
-        padding: 4rem 0 0 0;
+        padding: 4rem 4rem 2rem 4rem;
+
+        @include tablet {
+          font-size: 3rem;
+          padding: 4rem 0 0 0;
+        }
       }
 
       ul {
         display: flex;
+        flex-direction: column;
+
+        @include tablet {
+          flex-direction: row;
+        }
 
         li {
           flex-direction: column;
           font-size: 3rem;
           list-style: none;
-          margin: 5rem auto 4rem auto;
+          margin: 1rem auto;
           text-align: center;
           background-color: colour(oyster);
           border-radius: 10px;
           padding: 2rem;
           box-shadow: 5px 10px 3px 1px colour(bazaar);
           transition: 200ms ease-out all;
+
+          @include tablet {
+            margin: 5rem auto 4rem auto;
+          }
 
           &:hover {
             box-shadow: 2px 5px 3px 1px colour(bazaar);

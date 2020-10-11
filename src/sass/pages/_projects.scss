@@ -2,12 +2,21 @@
   background-color: colour(bazaar);
   transition: all 400ms ease-out;
   height: 80vh;
+  padding: 0 2rem;
+
+  @include tablet {
+    padding: 0;
+  }
 
   .container {
     position: relative;
 
     .projects-section {
-      padding-top: 12rem;
+      padding-top: 22rem;
+
+      @include tablet {
+        padding-top: 12rem;
+      }
 
       .title {
         font-family: font(helvetica);
@@ -30,10 +39,19 @@
         font-family: font(alegreya);
         line-height: 4rem;
         max-width: 40rem;
+        margin-top: 6rem;
+
+        @include tablet {
+          margin-top: 0;
+        }
 
         li {
           list-style: none;
-          font-size: 3rem;
+          font-size: 2.5rem;
+
+          @include tablet {
+            font-size: 3rem;
+          }
         }
       }
     }

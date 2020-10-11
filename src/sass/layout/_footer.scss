@@ -23,15 +23,15 @@ footer {
     .footer-icons.linkedin,
     .footer-icons.github {
       height: auto;
-      width: 45px;
+      width: 35px;
     }
 
     .footer-icons {
-      margin: 2rem 1rem;
+      margin: 2rem 1rem 1rem 1rem;
       fill: colour(onyx);
       stroke: colour(onyx);
       transition: 300ms all ease-out;
-      width: 40px;
+      width: 30px;
       height: auto;
 
       &:hover {

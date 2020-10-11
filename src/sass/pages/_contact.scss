@@ -1,12 +1,21 @@
 #contact {
   background-color: colour(oyster);
   transition: all 400ms ease-out;
+  padding: 0 2rem;
+
+  @include tablet {
+    padding: 0;
+  }
 
   .container {
     position: relative;
 
     .contact-section {
-      padding-top: 12rem;
+      padding-top: 22rem;
+
+      @include tablet {
+        padding-top: 12rem;
+      }
 
       .title {
         font-family: font(helvetica);
@@ -26,9 +35,13 @@
 
         p {
           max-width: 60rem;
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin-bottom: 1rem;
           line-height: 4rem;
+
+          @include tablet {
+            font-size: 3rem;
+          }
         }
       }
 
@@ -65,7 +78,12 @@
 
       .map-dimensions {
         height: 400px;
-        width: 700px;
+        width: 100%;
+
+        @include tablet {
+          height: 400px;
+          max-width: 700px;
+        }
 
         * {
           border-radius: 20px;

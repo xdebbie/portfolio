@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Img from "gatsby-image"
-import Pencil from "../assets/pencil.svg"
 import Albania from "../assets/flags/albania.svg"
 import Argentina from "../assets/flags/argentina.svg"
 import Brazil from "../assets/flags/brazil.svg"
@@ -169,10 +168,7 @@ const About = () => {
             >
               LinkedIn
             </a>
-            , so come over and stalk me! And while you are at it, also add me
-            and send me a heya! If you are a former client, you are welcome to
-            write me a recommendation as well{" "}
-            <Pencil className="text-icons" alt="pencil" />
+            , so come over and add me there!
           </p>
         </div>
       </div>

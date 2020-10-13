@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>𝘿𝙚𝙗𝙤𝙧𝙖𝙝 𝘾𝙖𝙡𝙙𝙚𝙞𝙧𝙖</title>
-          <link rel="prerender" href="http://deborah.vercel.app" />
+          <link rel="prerender" href="https://deborah.vercel.app" />
         </Helmet>
         <Nav />
         <Banner />

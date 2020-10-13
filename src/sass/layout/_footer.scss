@@ -7,7 +7,6 @@ footer {
   display: flex;
   flex-direction: row;
   background-color: colour(bazaar);
-  height: 10vh;
   text-align: center;
 
   .footer {
@@ -18,6 +17,7 @@ footer {
       font-family: font(helvetica);
       font-size: 1.4rem;
       color: colour(onyx);
+      padding-bottom: 2rem;
     }
 
     .footer-icons.linkedin,

@@ -12,24 +12,24 @@ import Contact from "../sections/contact"
 import Footer from "../components/footer"
 
 class IndexPage extends React.Component {
-  render() {
-    return (
-      <div>
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>𝘿𝙚𝙗𝙤𝙧𝙖𝙝 𝘾𝙖𝙡𝙙𝙚𝙞𝙧𝙖</title>
-          <link rel="prerender" href="https://deborah.vercel.app" />
-        </Helmet>
-        <Nav />
-        <Banner />
-        <About />
-        <Stack />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>𝘿𝙚𝙗𝙤𝙧𝙖𝙝 𝘾𝙖𝙡𝙙𝙚𝙞𝙧𝙖</title>
+                    <link rel="prerender" href="https://deborah.vercel.app" />
+                </Helmet>
+                <Nav />
+                <Banner />
+                <About />
+                <Stack />
+                <Projects />
+                <Contact />
+                <Footer />
+            </div>
+        )
+    }
 }
 
 export default IndexPage

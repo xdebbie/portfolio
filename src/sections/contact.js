@@ -6,10 +6,10 @@ import ContactContent from "../components/contactContent"
 import Map from "../components/map"
 
 const Contact = () => (
-  <div id="contact">
-    <ContactContent />
-    <Map />
-  </div>
+    <div id="contact">
+        <ContactContent />
+        <Map />
+    </div>
 )
 
 export default Contact

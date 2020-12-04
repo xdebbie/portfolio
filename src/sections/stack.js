@@ -7,14 +7,14 @@ import Design from "../assets/design.svg"
 const Stack = () => {
     const data = useStaticQuery(graphql`
     query {
-    stack: file(relativePath: { eq: "stack.jpg" }) {
-        childImageSharp {
-            fluid(maxWidth: 900, quality: 100) {
-                ...GatsbyImageSharpFluid
+        stack: file(relativePath: { eq: "stack.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 900, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                    }
                 }
             }
         }
-    }
     `)
 
     return (

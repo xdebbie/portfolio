@@ -1,0 +1,124 @@
+.projects__collapsible {
+    padding: 4rem 0 2rem 0;
+
+    .collapsible__section {
+        display: flex;
+        flex-direction: column;
+
+        .collapsible {
+            color: whitesmoke;
+            cursor: pointer;
+            padding: 0 18px;
+            display: flex;
+            align-items: center;
+            border: none;
+            outline: none;
+            transition: 0.2s all ease;
+            position: relative;
+
+            &:hover {
+                opacity: 0.8;
+                transition: 0.2s all ease;
+            }
+
+            .collapsible__title {
+                font-family: monospace;
+                font-size: 16px;
+                position: absolute;
+                top: 10px;
+            }
+        }
+
+        .collapsible__content {
+            background-color: #e6d1d1;
+            overflow: hidden;
+            transition: height 0.2s ease-out;
+
+            .collapsible__body {
+                font-family: font(alegreya);
+                margin: 2rem;
+                position: relative;
+
+                p {
+                    font-size: 2.3rem;
+                }
+
+                h1 {
+                    font-family: monospace;
+                    font-size: 5rem;
+
+                    span {
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+
+                    .projects__links {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        font-size: 3rem;
+                        font-weight: 200;
+                    }
+                }
+
+                .chips {
+                    font-family: monospace;
+                    display: flex;
+
+                    .chip {
+                        cursor: default;
+                        font-size: 14px;
+                        flex-direction: row;
+                        margin-right: 1rem;
+                        padding: 8px;
+                        background-color: lighten(
+                            $color: #b88f8c,
+                            $amount: 10%
+                        );
+                        transition: 0.2s all ease;
+
+                        &:hover {
+                            background-color: #b88f8c;
+                            transition: 0.2s all ease;
+                        }
+                    }
+                }
+
+                .projects__description {
+                    margin: 2rem auto;
+                    display: flex;
+                    flex-direction: row;
+
+                    .projects__description--text {
+                        width: 50%;
+
+                        p {
+                            margin-bottom: 2rem;
+                            line-height: 3rem;
+                            padding-right: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    transition: height 0.2s ease-out;
+}
+
+// Chevron
+.collapsible__icon {
+    margin-left: auto;
+    transition: transform 0.2s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.rotate {
+    .collapsible__icon {
+        transform: rotate(90deg);
+    }
+}

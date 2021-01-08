@@ -1,59 +1,54 @@
 #projects {
-  background-color: colour(bazaar);
-  transition: all 400ms ease-out;
-  height: 80vh;
-  padding: 0 2rem;
+    background-color: colour(bazaar);
+    transition: all 400ms ease-out;
+    min-height: 80vh;
+    padding: 0 2rem;
 
-  @include tablet {
-    padding: 0;
-  }
-
-  .container {
-    position: relative;
-
-    .projects-section {
-      padding-top: 22rem;
-
-      @include tablet {
-        padding-top: 12rem;
-      }
-
-      .title {
-        font-family: font(helvetica);
-        font-size: 5rem;
-        position: absolute;
-        top: 1rem;
-        right: 0;
-
-        span {
-          font-weight: bold;
-        }
-      }
-
-      p {
-        max-width: 60rem;
-        font-size: 3rem;
-      }
-
-      ul {
-        font-family: font(alegreya);
-        line-height: 4rem;
-        max-width: 40rem;
-        margin-top: 6rem;
-
-        @include tablet {
-          margin-top: 0;
-        }
-
-        li {
-          list-style: none;
-          font-size: 2.5rem;
-
-          @include tablet {
-            font-size: 3rem;
-          }
-        }
-      }
+    @include tablet {
+        padding: 0;
     }
-  }
+
+    .container {
+        position: relative;
+
+        .projects-section {
+            padding-top: 22rem;
+
+            @include tablet {
+                padding-top: 12rem;
+            }
+
+            .title {
+                font-family: font(helvetica);
+                font-size: 5rem;
+                position: absolute;
+                top: 1rem;
+                right: 0;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            .projects__header {
+                font-family: font(alegreya);
+                line-height: 4rem;
+                margin-top: 6rem;
+
+                p {
+                    max-width: 75rem;
+                    font-size: 3rem;
+
+                    &:first-of-type {
+                        margin-bottom: 2rem;
+                    }
+                }
+
+                @include tablet {
+                    font-size: 3rem;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }

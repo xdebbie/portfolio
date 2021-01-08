@@ -3,7 +3,7 @@
 /* ---------------------------
 $  1. CONFIGURATION & HELPERS
  ----------------------------*/
-@import "abstracts/functions", "abstracts/queries";
+@import "abstracts/functions", "abstracts/queries", "abstracts/mixins";
 
 /* ---------------------------
 $  2. VENDORS
@@ -23,6 +23,8 @@ $  4. LAYOUT
 /* ---------------------------
 $  5. COMPONENTS
  ----------------------------*/
+@import "components/collapsible", "components/backdrop", "components/button",
+  "components/drawer-toggle", "components/side-drawer";
 
 /* ---------------------------
 $  6. PAGES

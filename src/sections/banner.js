@@ -38,6 +38,7 @@ const Banner = () => {
                         <a
                             href="https://www.allowa.com"
                             target="_blank"
+                            rel="noreferrer"
                             className="links"
                         >
                             Allowa

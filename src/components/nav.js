@@ -1,14 +1,13 @@
-import { Link } from "gatsby"
-import React, { Component } from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import Scrollspy from "react-scrollspy"
-import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import React, { Component } from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Scrollspy from 'react-scrollspy'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 class Nav extends Component {
     getNavList = ({ mobile = false }) => (
         <div mobile={mobile}>
             <Scrollspy
-                items={["banner", "about", "stack", "projects", "contact"]}
+                items={['banner', 'about', 'stack', 'projects', 'contact']}
                 currentClassName="current"
                 mobile={mobile}
                 offset={-104}
@@ -36,11 +35,15 @@ class Nav extends Component {
                                             type="checkbox"
                                             id="toggle"
                                             onChange={e =>
-                                                toggleTheme(e.target.checked ? "dark" : "light")
+                                                toggleTheme(
+                                                    e.target.checked
+                                                        ? 'dark'
+                                                        : 'light'
+                                                )
                                             }
-                                            checked={theme === "dark"}
+                                            checked={theme === 'dark'}
                                         />
-                                        <label for="toggle"></label>
+                                        <label for="toggle">{}</label>
                                     </div>
                                 )}
                             </ThemeToggler>

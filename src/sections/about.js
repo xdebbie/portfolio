@@ -1,6 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 import Albania from '../assets/flags/albania.svg'
 import Argentina from '../assets/flags/argentina.svg'
 import Brazil from '../assets/flags/brazil.svg'
@@ -47,6 +46,8 @@ const About = () => {
                         Japanese! I am also available for{' '}
                         <Link
                             to="https://www.medium.com/@ithos"
+                            target="_blank"
+                            rel="noreferrer"
                             className="links"
                         >
                             {' '}
@@ -57,150 +58,78 @@ const About = () => {
 
                     <ul className="lang">
                         <div className="lang-box">
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="Do it do it do it do it do it do it"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Uk className="flags" alt="uk" />
                                 <Usa className="flags" alt="usa" />
                                 <p>English</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="[cries in Spanish]"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Argentina className="flags" alt="argentina" />
                                 <Spain className="flags" alt="spain" />
                                 <p>Spanish</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="L'ocasió s'ha d'agafar pels pèls"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Spain className="flags" alt="spain" />
                                 <p>Catalan</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="Antes que eu me esqueça: fora Bolsonaro!"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Portugal className="flags" alt="portugal" />
                                 <Brazil className="flags" alt="brazil" />
                                 <p>Portuguese</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <France className="flags" alt="france" />
                                 <p>French</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Italy className="flags" alt="italy" />
                                 <p>Italian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="Ingen fara på taket, jag är här!"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Sweden className="flags" alt="sweden" />
                                 <p>Swedish</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="Du skød papegøjen, jeg er her! Ansæt mig nu"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Denmark className="flags" alt="denmark" />
                                 <p>Danish</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="Du kom ikke hele veien for å bare stoppe og snu seg rundt"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Norway className="flags" alt="norway" />
                                 <p>Norwegian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Estonia className="flags" alt="estonia" />
                                 <p>Estonian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Finland className="flags" alt="finland" />
                                 <p>Finnish</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Romania className="flags" alt="romania" />
                                 <p>Romanian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Albania className="flags" alt="albania" />
                                 <p>Albanian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Russia className="flags" alt="russia" />
                                 <p>Russian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Ukraine className="flags" alt="ukraine" />
                                 <p>Ukrainian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Bulgaria className="flags" alt="bulgaria" />
                                 <p>Bulgarian</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Israel className="flags" alt="israel" />
                                 <p>Hebrew</p>
                             </li>
-                            <li
-                                class="tooltip-toggle"
-                                aria-label="#"
-                                tabindex="0"
-                            >
+                            <li>
                                 <Japan className="flags" alt="japan" />
                                 <p>Japanese</p>
                             </li>
@@ -214,6 +143,7 @@ const About = () => {
                         <a
                             href="https://www.linkedin.com/in/deborah-caldeira/"
                             target="_blank"
+                            rel="noreferrer"
                             className="links"
                         >
                             LinkedIn

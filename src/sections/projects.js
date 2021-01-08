@@ -28,6 +28,7 @@ const Projects = () => {
                             <a
                                 href="https://www.allowa.com"
                                 target="_blank"
+                                rel="noreferrer"
                                 className="links"
                             >
                                 Allowa
@@ -38,6 +39,7 @@ const Projects = () => {
                                 href="https://www.usefabriq.com"
                                 target="_blank"
                                 className="links"
+                                rel="noreferrer"
                             >
                                 fabriq
                             </a>{' '}
@@ -46,6 +48,7 @@ const Projects = () => {
                             <a
                                 href="https://www.ekotka.com"
                                 target="_blank"
+                                rel="noreferrer"
                                 className="links"
                             >
                                 Evergreen & Kotka
@@ -58,6 +61,7 @@ const Projects = () => {
                             <a
                                 href="https://makerslate.io/deborah"
                                 target="_blank"
+                                rel="noreferrer"
                                 className="links"
                             >
                                 makerslate

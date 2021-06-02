@@ -56,7 +56,8 @@ const Projects = () => {
                             .
                         </p>
                         <p>
-                            See some selected front end projects below. For a
+                            See some selected front end projects below.
+                            {/* For a
                             complete list of projects, please visit my{' '}
                             <a
                                 href="https://makerslate.io/deborah"
@@ -66,7 +67,7 @@ const Projects = () => {
                             >
                                 makerslate
                             </a>
-                            .
+                            . */}
                         </p>
                     </div>
                 </div>

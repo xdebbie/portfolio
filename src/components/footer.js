@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
 // Socials
-import Linkedin from "../assets/linkedin.svg"
-import Github from "../assets/github.svg"
-import Medium from "../assets/medium.svg"
-import Makerslate from "../assets/makerslate.svg"
+import Linkedin from '../assets/linkedin.svg'
+import Github from '../assets/github.svg'
+import Medium from '../assets/medium.svg'
+// import Makerslate from '../assets/makerslate.svg'
 
 const Footer = () => {
     return (
@@ -16,16 +16,19 @@ const Footer = () => {
                         <Github className="footer-icons github" alt="github" />
                     </Link>
                     <Link to="https://linkedin.com/in/deborah-caldeira">
-                        <Linkedin className="footer-icons linkedin" alt="linkedin" />
+                        <Linkedin
+                            className="footer-icons linkedin"
+                            alt="linkedin"
+                        />
                     </Link>
                     <Link to="https://medium.com/@ithos">
                         <Medium className="footer-icons" alt="medium" />
                     </Link>
-                    <Link to="https://makerslate.io/deborah">
+                    {/* <Link to="https://makerslate.io/deborah">
                         <Makerslate className="footer-icons" alt="makerslate" />
-                    </Link>
+                    </Link> */}
                 </div>
-                <p>© 2020 kotka&bowie</p>
+                <p>© 2021 kotka&bowie</p>
             </div>
         </footer>
     )

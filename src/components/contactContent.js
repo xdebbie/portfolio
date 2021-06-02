@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 const Contact = () => {
     return (
@@ -10,22 +10,34 @@ const Contact = () => {
                     </div>
                     <div className="info">
                         <p>
-                            <a href="mailto: deborah@asia.com" className="links">
+                            <a
+                                href="mailto: deborah@asia.com"
+                                className="links"
+                            >
                                 email
                             </a>
                         </p>
                         <p>
-                            <a href="https://github.com/xdebbie" className="links">
+                            <a
+                                href="https://github.com/xdebbie"
+                                className="links"
+                            >
                                 github
                             </a>
                         </p>
                         <p>
-                            <a href="https://twitter.com/debishot" className="links">
+                            <a
+                                href="https://twitter.com/debishot"
+                                className="links"
+                            >
                                 twitter
                             </a>
                         </p>
                         <p>
-                            <a href="https://medium.com/@ithos" className="links">
+                            <a
+                                href="https://medium.com/@ithos"
+                                className="links"
+                            >
                                 medium
                             </a>
                         </p>
@@ -37,11 +49,11 @@ const Contact = () => {
                                 linkedin
                             </a>
                         </p>
-                        <p>
+                        {/* <p>
                             <a href="https://makerslate.io/deborah" className="links">
                                 makerslate
                             </a>
-                        </p>
+                        </p> */}
 
                         <div className="address">
                             <div>

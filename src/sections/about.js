@@ -31,7 +31,7 @@ const About = () => {
                     </div>
                     <p>
                         I am from everywhere and nowhere. I have been around the
-                        USA, Curacao, Argentina, Brazil, Spain, Romania,
+                        USA, Curaçao, Argentina, Brazil, Spain, Romania,
                         Estonia, the UK, and I have chosen France to settle
                         down.
                     </p>

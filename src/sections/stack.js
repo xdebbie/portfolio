@@ -1,16 +1,16 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Code from "../assets/code.svg"
-import Design from "../assets/design.svg"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Code from '../assets/code.svg'
+import Design from '../assets/design.svg'
 
 const Stack = () => {
     const data = useStaticQuery(graphql`
-    query {
-        stack: file(relativePath: { eq: "stack.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 900, quality: 100) {
-                    ...GatsbyImageSharpFluid
+        query {
+            stack: file(relativePath: { eq: "stack.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 900, quality: 100) {
+                        ...GatsbyImageSharpFluid
                     }
                 }
             }
@@ -26,7 +26,10 @@ const Stack = () => {
                     </div>
                     <div className="stack-bowie">
                         <div className="stack-image">
-                            <Img fluid={data.stack.childImageSharp.fluid} alt="stack" />
+                            <Img
+                                fluid={data.stack.childImageSharp.fluid}
+                                alt="stack"
+                            />
                         </div>
                         <p>My secretary, Bowie</p>
                     </div>
@@ -68,15 +71,16 @@ const Stack = () => {
                                 <ul>
                                     <li>React</li>
                                     <li>GraphQL</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Sass / Less</li>
+                                    <li>Typescript</li>
                                     <li>JavaScript</li>
                                     <li>Node.js</li>
                                     <li>PHP</li>
                                     <li>Python</li>
                                     <li>C++</li>
-                                    <li>Gatsby</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Sass / Less</li>
+                                    <li>Next / Gatsby</li>
                                 </ul>
                             </div>
                             <div className="stack-sect">

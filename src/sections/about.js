@@ -137,7 +137,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="education">
-                    <h2>Bla bla bla education</h2>
+                    <h2>Bla bla bla academics</h2>
                     <p>
                         All you need to know about my studies is probably on my{' '}
                         <a

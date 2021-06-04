@@ -35,10 +35,7 @@ class Collapsible extends Component {
                     className={`collapsible ${isActive ? 'active' : ''}`}
                     onClick={e => this.handleToggle(e)}
                     style={{
-                        backgroundImage: `
-                url(${bgimage})`,
-                        // backgroundPositionY: '-200px',
-                        backgroundSize: 'cover',
+                        backgroundImage: `url(${bgimage})`,
                         height: buttonHeight + 'px',
                     }}
                 >

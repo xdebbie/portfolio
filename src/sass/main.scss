@@ -3,31 +3,30 @@
 /* ---------------------------
 $  1. CONFIGURATION & HELPERS
  ----------------------------*/
-@import "abstracts/functions", "abstracts/queries", "abstracts/mixins";
+@import 'abstracts/functions', 'abstracts/queries', 'abstracts/mixins';
 
 /* ---------------------------
 $  2. VENDORS
  ----------------------------*/
-@import "vendors/reset", "vendors/normalize";
+@import 'vendors/reset', 'vendors/normalize';
 
 /* ---------------------------
 $  3. BASE STUFF
  ----------------------------*/
-@import "base/base", "base/typography";
+@import 'base/base', 'base/typography';
 
 /* ---------------------------
 $  4. LAYOUT
  ----------------------------*/
-@import "layout/nav", "layout/footer";
+@import 'layout/nav', 'layout/footer';
 
 /* ---------------------------
 $  5. COMPONENTS
  ----------------------------*/
-@import "components/collapsible", "components/backdrop", "components/button",
-  "components/drawer-toggle", "components/side-drawer";
+@import 'components/collapsible';
 
 /* ---------------------------
 $  6. PAGES
  ----------------------------*/
-@import "pages/banner", "pages/about", "pages/stack", "pages/projects",
-  "pages/contact";
+@import 'pages/banner', 'pages/about', 'pages/stack', 'pages/projects',
+    'pages/contact';

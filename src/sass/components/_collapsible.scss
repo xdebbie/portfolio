@@ -15,6 +15,15 @@
             outline: none;
             transition: 0.2s all ease;
             position: relative;
+            background-size: cover;
+
+            @include tablet {
+                background-position-y: -80px;
+            }
+
+            @include desktop {
+                background-position-y: -200px;
+            }
 
             &:hover {
                 opacity: 0.8;
@@ -48,31 +57,51 @@
                     font-family: font(helvetica);
                     font-size: 5rem;
                     text-transform: uppercase;
+                    position: relative;
 
                     span {
                         font-size: 20px;
                         font-weight: 400;
+                        display: block;
+                        margin-top: 1rem;
+
+                        @include desktop {
+                            display: inline;
+                            margin-top: 0;
+                        }
                     }
 
                     .projects__links {
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        font-size: 3rem;
+                        font-size: 2rem;
                         font-weight: 200;
                         font-family: monospace;
+                        margin-top: 1rem;
                         text-transform: lowercase;
+
+                        @include tablet {
+                            position: absolute;
+                            bottom: 4.2rem;
+                            right: 0;
+                            text-align: right;
+                        }
+
+                        @include desktop {
+                            font-size: 2.6rem;
+                            bottom: 0.4rem;
+                        }
                     }
                 }
 
                 .chips {
                     font-family: monospace;
                     display: flex;
+                    flex-wrap: wrap;
 
                     .chip {
                         cursor: default;
                         font-size: 14px;
                         flex-direction: row;
+                        margin-bottom: 1rem;
                         margin-right: 1rem;
                         padding: 8px;
                         background-color: lighten(
@@ -91,15 +120,28 @@
                 .projects__description {
                     margin: 2rem auto;
                     display: flex;
-                    flex-direction: row;
+                    flex-direction: column;
+
+                    @include tablet {
+                        flex-direction: row;
+                    }
 
                     .projects__description--text {
-                        width: 50%;
+                        width: 100%;
+
+                        @include tablet {
+                            width: 50%;
+                        }
 
                         p {
                             margin-bottom: 2rem;
                             line-height: 3rem;
+                            font-size: 1.8rem;
                             padding-right: 4rem;
+
+                            @include tablet {
+                                font-size: 2.3rem;
+                            }
                         }
                     }
                 }

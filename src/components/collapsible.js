@@ -37,7 +37,7 @@ class Collapsible extends Component {
                     style={{
                         backgroundImage: `
                 url(${bgimage})`,
-                        backgroundPositionY: '-200px',
+                        // backgroundPositionY: '-200px',
                         backgroundSize: 'cover',
                         height: buttonHeight + 'px',
                     }}

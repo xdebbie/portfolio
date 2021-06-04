@@ -2,7 +2,6 @@
     background-color: colour(bazaar);
     transition: all 400ms ease-out;
     min-height: 80vh;
-    padding: 0 2rem;
 
     @include tablet {
         padding: 0;
@@ -27,14 +26,9 @@
                 font-size: 3.6rem;
                 position: absolute;
                 top: 3rem;
-                right: 0;
-
-                @include tablet {
-                    right: 2rem;
-                }
+                right: 2rem;
 
                 @include desktop {
-                    right: 0;
                     top: 2rem;
                     font-size: 5rem;
                 }

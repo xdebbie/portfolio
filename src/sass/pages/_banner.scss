@@ -16,7 +16,11 @@
                 padding: 10rem 0 3rem 0;
 
                 @include tablet {
-                    padding: 15rem 0 5rem 0;
+                    padding: 10rem 0 5rem 0;
+                }
+
+                @include desktop {
+                    padding-top: 15rem;
                 }
 
                 img {

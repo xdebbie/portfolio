@@ -17,7 +17,7 @@ class Nav extends Component {
 
     render() {
         return (
-            <header>
+            <header id="nav">
                 <div className="inner-header">
                     <div className="logo">
                         <AnchorLink href="#banner">DEBORAH CALDEIRA</AnchorLink>

@@ -3,18 +3,14 @@ $  NAV (header)
  --------------------------------------------*/
 
 #nav {
-    display: none;
-
-    @include tablet {
-        display: block;
-        height: 80px;
-        width: 100vw;
-        position: fixed;
-        top: 0px;
-        z-index: 1;
-        background-color: colour(oyster);
-        transition: all 400ms ease-out;
-    }
+    display: block;
+    height: 80px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: colour(oyster);
+    transition: all 400ms ease-out;
 
     .inner-header {
         display: flex;
@@ -36,7 +32,10 @@ $  NAV (header)
                 text-decoration: none;
                 letter-spacing: 1.5px;
                 transition: all 200ms ease-out;
-                font-size: font-size(logo);
+
+                @include tablet {
+                    font-size: font-size(logo);
+                }
 
                 &:link {
                     color: colour(cod-gray);
@@ -66,12 +65,16 @@ $  NAV (header)
                 flex-direction: row;
 
                 a {
-                    font-size: font-size(nav);
-                    margin: 0 20px;
                     text-decoration: none;
                     letter-spacing: 1.75px;
                     text-transform: uppercase;
                     transition: all 200ms ease-out;
+                    margin: 5px 5px;
+
+                    @include tablet {
+                        font-size: font-size(nav);
+                        margin: 0 20px;
+                    }
 
                     &:last-child {
                         margin-right: 0;
@@ -104,7 +107,12 @@ $  NAV (header)
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    margin-top: -3px;
+                    margin-left: 5px;
+
+                    @include tablet {
+                        margin-top: -3px;
+                        margin-left: 0;
+                    }
 
                     &:before,
                     &:after {
@@ -114,24 +122,37 @@ $  NAV (header)
                     label {
                         position: relative;
                         display: block;
-                        width: 45px;
-                        height: 25px;
+                        width: 32px;
+                        height: 18px;
                         border-radius: 100px;
                         background-color: colour(russian);
                         overflow: hidden;
                         cursor: pointer;
+
+                        @include tablet {
+                            width: 45px;
+                            height: 25px;
+                        }
 
                         &:before,
                         &:after {
                             display: block;
                             position: absolute;
                             content: '';
-                            width: 19px;
-                            height: 19px;
+                            width: 12px;
+                            height: 12px;
                             border-radius: 50%;
                             top: 3px;
                             left: 3px;
                             transition: 0.4s ease;
+
+                            @include tablet {
+                                width: 19px;
+                                height: 19px;
+                                border-radius: 50%;
+                                top: 3px;
+                                left: 3px;
+                            }
                         }
 
                         &:before {
@@ -151,11 +172,19 @@ $  NAV (header)
                         &:checked + label {
                             &:before {
                                 background-color: colour(egg);
-                                transform: translateX(20px);
+                                transform: translateX(14px);
+
+                                @include tablet {
+                                    transform: translateX(20px);
+                                }
                             }
 
                             &:after {
-                                transform: translateX(75px) scale(1);
+                                transform: translateX(70px) scale(1);
+
+                                @include tablet {
+                                    transform: translateX(75px) scale(1);
+                                }
                             }
                         }
                     }

@@ -3,13 +3,18 @@ $  NAV (header)
  --------------------------------------------*/
 
 #nav {
-    height: 80px;
-    width: 100vw;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-    background-color: colour(oyster);
-    transition: all 400ms ease-out;
+    display: none;
+
+    @include tablet {
+        display: block;
+        height: 80px;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        background-color: colour(oyster);
+        transition: all 400ms ease-out;
+    }
 
     .inner-header {
         display: flex;

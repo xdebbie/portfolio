@@ -33,30 +33,30 @@ const Projects = () => {
                             >
                                 Allowa
                             </a>{' '}
-                            as a full stack engineer and have previously worked
-                            at{' '}
+                            as a full-stack engineer and I have previously
+                            worked at{' '}
                             <a
                                 href="https://www.usefabriq.com"
                                 target="_blank"
-                                className="links"
                                 rel="noreferrer"
+                                className="links"
                             >
                                 fabriq
                             </a>{' '}
-                            as a front end engineer, as well as managed my
-                            e-commerce{' '}
+                            as a front-end engineer, after spending 9 years in
+                            the music industry at the{' '}
                             <a
-                                href="https://www.ekotka.com"
+                                href="https://www.universalmusic.com"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="links"
                             >
-                                Evergreen & Kotka
+                                Universal Music Group
                             </a>{' '}
                             .
                         </p>
                         <p>
-                            See some selected front end projects below.
+                            See some selected front-end projects below.
                             {/* For a
                             complete list of projects, please visit my{' '}
                             <a

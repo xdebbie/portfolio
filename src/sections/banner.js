@@ -33,7 +33,7 @@ const Banner = () => {
                         Ahoy! I'm <span>Deborah</span>.
                     </div>
                     <p>
-                        I am a <span>front end web developer</span> based in
+                        I am a <span>front-end web developer</span> based in
                         Paris, France. I am currently working at{' '}
                         <a
                             href="https://www.allowa.com"

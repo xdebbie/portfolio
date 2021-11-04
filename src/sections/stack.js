@@ -1,21 +1,19 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Code from '../assets/code.svg'
-import Design from '../assets/design.svg'
+// import { useStaticQuery, graphql } from 'gatsby'
+// import Img from 'gatsby-image'
 
 const Stack = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            stack: file(relativePath: { eq: "stack.jpg" }) {
-                childImageSharp {
-                    fluid(maxWidth: 900, quality: 100) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         stack: file(relativePath: { eq: "stack.jpg" }) {
+    //             childImageSharp {
+    //                 fluid(maxWidth: 900, quality: 100) {
+    //                     ...GatsbyImageSharpFluid
+    //                 }
+    //             }
+    //         }
+    //     }
+    // `)
 
     return (
         <div id="stack">
@@ -24,7 +22,7 @@ const Stack = () => {
                     <div className="title">
                         <h1>/stack</h1>
                     </div>
-                    <div className="stack-bowie">
+                    {/* <div className="stack-bowie">
                         <div className="stack-image">
                             <Img
                                 fluid={data.stack.childImageSharp.fluid}
@@ -32,12 +30,42 @@ const Stack = () => {
                             />
                         </div>
                         <p>My secretary, Bowie</p>
-                    </div>
+                    </div> */}
                     <div className="stack-boxes">
-                        <div className="smaller-box">
-                            <div className="stack-sect">
-                                <Design className="stack-icons" alt="design" />
-                                <p>Designer</p>
+                        <div className="subsection">
+                            <p>dev</p>
+                            <div>
+                                <ul>
+                                    <li>React</li>
+                                    <li>Typescript</li>
+                                    <li>JavaScript</li>
+                                    <li>GraphQL</li>
+                                    <li>Node.js</li>
+                                    <li>PHP</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Sass/Less</li>
+                                    <li>Next/Gatsby</li>
+                                </ul>
+                                <ul>
+                                    <li>Atom</li>
+                                    <li>VSCode</li>
+                                    <li>Bootstrap</li>
+                                    <li>Github/Gitlab</li>
+                                    <li>Gist</li>
+                                    <li>npm/yarn</li>
+                                    <li>Terminal</li>
+                                    <li>Bash</li>
+                                    <li>Vercel/Netlify/Heroku</li>
+                                    <li>Contentful/Prismic</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="subsection">
+                            <p>design</p>
+                            <div>
                                 <ul>
                                     <li>UX</li>
                                     <li>UI</li>
@@ -46,9 +74,6 @@ const Stack = () => {
                                     <li>Apps</li>
                                     <li>Logos</li>
                                 </ul>
-                            </div>
-                            <div className="stack-sect">
-                                <p>Design tools</p>
                                 <ul>
                                     <li>Figma</li>
                                     <li>Invision</li>
@@ -58,45 +83,7 @@ const Stack = () => {
                                     <li>Adobe Lightroom</li>
                                     <li>Adobe Photoshop</li>
                                     <li>Webflow</li>
-                                    <li>Zeplin</li>
-                                    <li>Marvel</li>
                                     <li>Sketch</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="smaller-box">
-                            <div className="stack-sect">
-                                <Code className="stack-icons" alt="code" />
-                                <p>Developer</p>
-                                <ul>
-                                    <li>React</li>
-                                    <li>GraphQL</li>
-                                    <li>Typescript</li>
-                                    <li>JavaScript</li>
-                                    <li>Node.js</li>
-                                    <li>PHP</li>
-                                    <li>Python</li>
-                                    <li>C++</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Sass / Less</li>
-                                    <li>Next / Gatsby</li>
-                                </ul>
-                            </div>
-                            <div className="stack-sect">
-                                <p>Dev tools</p>
-                                <ul>
-                                    <li>Atom</li>
-                                    <li>VSCode</li>
-                                    <li>Bootstrap</li>
-                                    <li>Codepen</li>
-                                    <li>Github</li>
-                                    <li>Gist</li>
-                                    <li>npm</li>
-                                    <li>Terminal</li>
-                                    <li>Bash</li>
-                                    <li>Vercel / Netlify / Heroku</li>
-                                    <li>Contentful / Prismic</li>
                                 </ul>
                             </div>
                         </div>

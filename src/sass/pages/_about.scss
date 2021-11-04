@@ -1,5 +1,5 @@
 #about {
-    background-color: colour(light-gray);
+    background: url('/fleck.png') colour(light-gray) repeat;
     transition: all 100ms ease-out;
     margin: 0;
 
@@ -11,7 +11,7 @@
         position: relative;
 
         @include desktop {
-            padding: 20rem 0 2rem 0;
+            padding: 14rem 0 2rem 0;
         }
 
         .about-section {
@@ -38,13 +38,12 @@
             p,
             li {
                 font-family: font(akkurat);
-                font-size: 2.4rem;
+                font-size: 1.8rem;
                 margin-bottom: 3rem;
                 line-height: 4rem;
 
                 @include desktop {
                     max-width: 70rem;
-                    font-size: 1.8rem;
                 }
             }
 

@@ -1,25 +1,24 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import Albania from '../assets/flags/albania.svg'
-import Argentina from '../assets/flags/argentina.svg'
-import Brazil from '../assets/flags/brazil.svg'
-import Bulgaria from '../assets/flags/bulgaria.svg'
-import Denmark from '../assets/flags/denmark.svg'
-import Estonia from '../assets/flags/estonia.svg'
-import Finland from '../assets/flags/finland.svg'
-import France from '../assets/flags/france.svg'
-import Israel from '../assets/flags/israel.svg'
-import Italy from '../assets/flags/italy.svg'
-import Japan from '../assets/flags/japan.svg'
-import Norway from '../assets/flags/norway.svg'
-import Portugal from '../assets/flags/portugal.svg'
-import Romania from '../assets/flags/romania.svg'
-import Russia from '../assets/flags/russia.svg'
-import Spain from '../assets/flags/spain.svg'
-import Sweden from '../assets/flags/sweden.svg'
-import Ukraine from '../assets/flags/ukraine.svg'
-import Uk from '../assets/flags/united-kingdom.svg'
-import Usa from '../assets/flags/united-states.svg'
+// import Albania from '../assets/flags/albania.svg'
+// import Argentina from '../assets/flags/argentina.svg'
+// import Brazil from '../assets/flags/brazil.svg'
+// import Bulgaria from '../assets/flags/bulgaria.svg'
+// import Denmark from '../assets/flags/denmark.svg'
+// import Estonia from '../assets/flags/estonia.svg'
+// import Finland from '../assets/flags/finland.svg'
+// import France from '../assets/flags/france.svg'
+// import Israel from '../assets/flags/israel.svg'
+// import Italy from '../assets/flags/italy.svg'
+// import Japan from '../assets/flags/japan.svg'
+// import Norway from '../assets/flags/norway.svg'
+// import Portugal from '../assets/flags/portugal.svg'
+// import Romania from '../assets/flags/romania.svg'
+// import Russia from '../assets/flags/russia.svg'
+// import Spain from '../assets/flags/spain.svg'
+// import Sweden from '../assets/flags/sweden.svg'
+// import Ukraine from '../assets/flags/ukraine.svg'
+// import Uk from '../assets/flags/united-kingdom.svg'
+// import Usa from '../assets/flags/united-states.svg'
 
 const About = () => {
     return (
@@ -29,126 +28,155 @@ const About = () => {
                     <div className="title">
                         <h1>/about</h1>
                     </div>
+                    <p className="subtitle">roots</p>
                     <p>
-                        I am from everywhere and nowhere. I have been around the
-                        USA, Curaçao, Argentina, Brazil, Spain, Romania,
-                        Estonia, the UK, and I have chosen France to settle
-                        down.
+                        I have lived in the USA, Curaçao, Argentina, Brazil,
+                        Spain, Romania, Estonia, the UK, and I have chosen
+                        France to settle down. I am comfortable with a lot of
+                        languages
                     </p>
-                    <p>
-                        I (probabaly) speak your language! I have done studies
-                        on English, Spanish, Portuguese, Italian, Catalan,
-                        French, Swedish, Danish, Finnish, Estonian, Russian and
-                        Romanian. I am also comfortable working with a variety
-                        of languages and alphabets including Cyrillic, the Ktav
-                        Ashuri, Kanji, Hiragana and Katakana - so don't be shy
-                        to ask me to develop your website in Russian, Hebrew or
-                        Japanese! I am also available for{' '}
-                        <Link
-                            to="https://www.medium.com/@ithos"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="links"
-                        >
-                            {' '}
-                            content writing
-                        </Link>
-                        .
-                    </p>
-
-                    <ul className="lang">
+                    {/* <ul className="lang">
                         <div className="lang-box">
                             <li>
                                 <Uk className="flags" alt="uk" />
                                 <Usa className="flags" alt="usa" />
-                                <p>English</p>
+                                <span class="tooltip-text">english</span>
                             </li>
                             <li>
                                 <Argentina className="flags" alt="argentina" />
                                 <Spain className="flags" alt="spain" />
-                                <p>Spanish</p>
+                                <span class="tooltip-text">spanish</span>
                             </li>
                             <li>
                                 <Spain className="flags" alt="spain" />
-                                <p>Catalan</p>
+                                <span class="tooltip-text">catalan</span>
                             </li>
                             <li>
                                 <Portugal className="flags" alt="portugal" />
                                 <Brazil className="flags" alt="brazil" />
-                                <p>Portuguese</p>
+                                <span class="tooltip-text">portuguese</span>
                             </li>
                             <li>
                                 <France className="flags" alt="france" />
-                                <p>French</p>
+                                <span class="tooltip-text">french</span>
                             </li>
                             <li>
                                 <Italy className="flags" alt="italy" />
-                                <p>Italian</p>
+                                <span class="tooltip-text">italian</span>
                             </li>
                             <li>
                                 <Sweden className="flags" alt="sweden" />
-                                <p>Swedish</p>
+                                <span class="tooltip-text">swedish</span>
                             </li>
                             <li>
                                 <Denmark className="flags" alt="denmark" />
-                                <p>Danish</p>
+                                <span class="tooltip-text">danish</span>
                             </li>
                             <li>
                                 <Norway className="flags" alt="norway" />
-                                <p>Norwegian</p>
+                                <span class="tooltip-text">norwegian</span>
                             </li>
                             <li>
                                 <Estonia className="flags" alt="estonia" />
-                                <p>Estonian</p>
+                                <span class="tooltip-text">estonian</span>
                             </li>
                             <li>
                                 <Finland className="flags" alt="finland" />
-                                <p>Finnish</p>
+                                <span class="tooltip-text">finnish</span>
                             </li>
                             <li>
                                 <Romania className="flags" alt="romania" />
-                                <p>Romanian</p>
+                                <span class="tooltip-text">romanian</span>
                             </li>
                             <li>
                                 <Albania className="flags" alt="albania" />
-                                <p>Albanian</p>
+                                <span class="tooltip-text">albanian</span>
                             </li>
                             <li>
                                 <Russia className="flags" alt="russia" />
-                                <p>Russian</p>
+                                <span class="tooltip-text">russian</span>
                             </li>
                             <li>
                                 <Ukraine className="flags" alt="ukraine" />
-                                <p>Ukrainian</p>
+                                <span class="tooltip-text">ukrainian</span>
                             </li>
                             <li>
                                 <Bulgaria className="flags" alt="bulgaria" />
-                                <p>Bulgarian</p>
+                                <span class="tooltip-text">bulgarian</span>
                             </li>
                             <li>
                                 <Israel className="flags" alt="israel" />
-                                <p>Hebrew</p>
+                                <span class="tooltip-text">hebrew</span>
                             </li>
                             <li>
                                 <Japan className="flags" alt="japan" />
-                                <p>Japanese</p>
+                                <span class="tooltip-text">japanese</span>
                             </li>
                         </div>
+                    </ul> */}
+                </div>
+                <div className="about-section">
+                    <p className="subtitle">education</p>
+                    <p>
+                        I have a background in industrial automation,
+                        photography, audio engineering, accounting and finance
+                        and computer science. I learn fast!
+                    </p>
+                </div>
+                <div className="about-section">
+                    <p className="subtitle">work</p>
+                    <p>
+                        I currently work at{' '}
+                        <a
+                            href="https://www.allowa.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="links"
+                        >
+                            allowa
+                        </a>{' '}
+                        as a full-stack engineer and I have previously worked at{' '}
+                        <a
+                            href="https://www.usefabriq.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="links"
+                        >
+                            fabriq
+                        </a>{' '}
+                        as a front-end engineer, after spending 9 years in the
+                        music industry at the{' '}
+                        <a
+                            href="https://www.universalmusic.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="links"
+                        >
+                            Universal Music Group
+                        </a>
+                    </p>
+                </div>
+                <div className="about-section">
+                    <p className="subtitle">interests</p>
+                    <ul>
+                        <li>rowing</li>
+                        <li>gym</li>
+                        <li>bass guitar</li>
+                        <li>gin tonic</li>
+                        <li>cats</li>
                     </ul>
                 </div>
-                <div className="education">
-                    <h2>Bla bla bla academics</h2>
+                <div className="about-section">
                     <p>
-                        All you need to know about my studies is probably on my{' '}
+                        you can have a full breakdown of my hectic life on my{' '}
                         <a
                             href="https://www.linkedin.com/in/deborah-caldeira/"
                             target="_blank"
                             rel="noreferrer"
                             className="links"
                         >
-                            LinkedIn
+                            linkedIn
                         </a>
-                        , so come over and add me there!
                     </p>
                 </div>
             </div>

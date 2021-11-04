@@ -1,6 +1,6 @@
 #about {
-    background-color: colour(bazaar);
-    transition: all 400ms ease-out;
+    background-color: colour(light-gray);
+    transition: all 100ms ease-out;
     margin: 0;
 
     @include tablet {
@@ -10,202 +10,114 @@
     .container {
         position: relative;
 
-        .about-section {
-            padding: 20rem 2rem 0 2rem;
+        @include desktop {
+            padding: 20rem 0 2rem 0;
+        }
 
-            @include desktop {
-                padding: 12rem 0 0 0;
-            }
+        .about-section {
+            margin-bottom: 8rem;
 
             .title {
-                font-family: font(helvetica);
+                font-family: font(alessandria);
                 font-size: 3.6rem;
                 position: absolute;
-                top: 3rem;
+                top: 10rem;
                 right: 2rem;
 
                 @include desktop {
                     right: 0;
-                    top: 2rem;
-                    font-size: 5rem;
-                }
-
-                span {
-                    font-weight: bold;
+                    font-size: 4rem;
                 }
             }
 
-            p {
-                font-family: font(alegreya);
+            .subtitle {
+                font-family: font(alessandria);
+                font-size: 3rem;
+            }
+
+            p,
+            li {
+                font-family: font(akkurat);
                 font-size: 2.4rem;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
                 line-height: 4rem;
 
                 @include desktop {
                     max-width: 70rem;
-                    font-size: 3rem;
+                    font-size: 1.8rem;
                 }
             }
-        }
 
-        .lang {
-            width: 100%;
-            text-align: center;
-            margin: 4rem auto;
-
-            .lang-box {
-                display: grid;
-                grid-gap: 2.5rem;
-                grid-template-columns: repeat(2, 1fr);
-
-                @include tablet {
-                    padding: 0;
-                    grid-template-columns: repeat(4, 1fr);
-                }
-
-                @include desktop {
-                    grid-template-columns: repeat(6, 1fr);
-                }
-
+            ul {
                 li {
-                    list-style: none;
-                    max-width: 20rem;
-                    background-color: colour(oyster);
-                    border-radius: 10px;
-                    padding: 0.8rem;
-                    box-shadow: 5px 10px 3px 1px colour(cowboy);
-                    transition: 200ms ease-out all;
-
-                    @include tablet {
-                        justify-self: center;
-                        width: 16rem;
-                    }
-
-                    @include desktop {
-                        padding: 1.4rem;
-                        width: 19rem;
-                    }
-
-                    &:hover {
-                        box-shadow: 2px 5px 3px 1px colour(cowboy);
-
-                        p {
-                            background-color: colour(russian);
-                            color: colour(bonjour);
-                            border: 3px solid colour(russian);
-                        }
-                    }
-
-                    p {
-                        background-color: colour(bazaar);
-                        border-radius: 20px;
-                        color: colour(bonjour);
-                        font-size: 1.5rem;
-                        border: 3px solid colour(bazaar);
-                        line-height: 2.8rem;
-                        margin: 0.6rem auto 0 auto;
-                        padding: 0 10px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        transition: 200ms ease-out all;
-                        width: fit-content;
-                        font-family: font(helvetica);
-
-                        @include desktop {
-                            font-size: 1.8rem;
-                            margin-top: 1.2rem;
-                        }
-                    }
-
-                    .flags {
-                        height: 5rem;
-                        width: 5rem;
-
-                        @include desktop {
-                            height: 6rem;
-                            width: 6rem;
-                        }
-                    }
+                    list-style-type: none;
+                    margin-bottom: 0;
                 }
-                /*
-        .tooltip-toggle {
-          position: relative;
-
-          // Tooltip text container
-          &::before {
-            position: absolute;
-            top: -6rem;
-            left: 1.5rem;
-            background-color: colour(russian);
-            border-radius: 10px;
-            color: colour(bonjour);
-            // This pulls in the text from the element with the tooltip
-            content: attr(aria-label);
-            padding: 1rem;
-            text-transform: none;
-            transition: all 0.3s ease;
-            width: 160px;
-          }
-
-          // Setting up the transition
-          &:before,
-          &:after {
-            color: colour(bonjour);
-            font-family: monospace;
-            font-size: 2rem;
-            opacity: 0;
-            pointer-events: none;
-            text-align: center;
-          }
-
-          //Triggering the transition
-          &:focus:before,
-          &:focus:after,
-          &:hover:before,
-          &:hover:after {
-            opacity: 1;
-            transition: all 0.75s ease;
-          }
-        }
-        */
             }
         }
 
-        .education {
-            display: grid;
-            grid-gap: 2.5rem;
-            grid-template-columns: repeat(2, 1fr);
-            padding: 4rem 2rem 6rem 2rem;
+        // .lang {
+        //     width: 100%;
+        //     text-align: center;
+        //     margin: 4rem auto;
 
-            @include desktop {
-                padding: 4rem 0 6rem 0;
-            }
+        //     .lang-box {
+        //         display: grid;
+        //         grid-gap: 2.5rem;
+        //         grid-template-columns: repeat(2, 1fr);
 
-            h2 {
-                font-family: font(helvetica);
-                font-size: 2.5rem;
+        //         @include tablet {
+        //             padding: 0;
+        //             grid-template-columns: repeat(4, 1fr);
+        //         }
 
-                @include tablet {
-                    font-size: 3rem;
-                }
-            }
+        //         @include desktop {
+        //             grid-template-columns: repeat(9, 1fr);
+        //         }
 
-            p {
-                font-family: font(alegreya);
-                max-width: 70rem;
-                font-size: 2.4rem;
-                line-height: 4rem;
-                text-align: right;
+        //         li {
+        //             list-style: none;
+        //             transition: 200ms ease-out all;
 
-                @include desktop {
-                    font-size: 3rem;
-                }
-            }
+        //             @include tablet {
+        //                 justify-self: center;
+        //                 width: 16rem;
+        //             }
 
-            .text-icons {
-                height: 3.5rem;
-                width: 3.5rem;
-            }
-        }
+        //             @include desktop {
+        //             }
+
+        //             .flags {
+        //                 height: 5rem;
+        //                 width: 5rem;
+
+        //                 @include desktop {
+        //                     height: 6rem;
+        //                     width: 6rem;
+        //                 }
+        //             }
+
+        //             .tooltip-text {
+        //                 visibility: hidden;
+        //                 width: 120px;
+        //                 background-color: black;
+        //                 color: #fff;
+        //                 text-align: center;
+        //                 border-radius: 6px;
+        //                 padding: 5px 0;
+
+        //                 /* Position the tooltip */
+        //                 position: absolute;
+        //                 z-index: 1;
+        //             }
+
+        //             &:hover {
+        //                 .tooltip-text {
+        //                     visibility: visible;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }

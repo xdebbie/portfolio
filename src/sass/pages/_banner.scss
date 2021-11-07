@@ -1,102 +1,97 @@
 #banner {
-    background-color: colour(oyster);
-    transition: all 400ms ease-out;
+    background: url('/fleck.png') colour(offwhite) repeat;
+    transition: all 100ms ease-out;
 
     .container {
-        position: relative;
-        padding: 0 2rem 7rem 2rem;
+        padding: 0 2rem 6rem 2rem;
 
         @include desktop {
-            padding: 0 0 7rem 0;
+            padding: 18rem 0 10rem 0;
         }
 
-        .image-left {
-            .profile-image {
-                max-width: 520px;
-                padding: 10rem 0 3rem 0;
+        .hero {
+            padding-top: 11rem;
+
+            @include tablet {
+                padding-top: 20rem;
+            }
+
+            @include desktop {
+                padding-top: 10rem;
+            }
+
+            .title {
+                font-family: font(alessandria);
+                font-size: 3rem;
+                margin-bottom: 12rem;
+                user-select: none;
 
                 @include tablet {
-                    padding: 10rem 0 5rem 0;
+                    font-size: 4.8rem;
                 }
 
                 @include desktop {
-                    padding-top: 15rem;
+                    font-size: 6rem;
+                    margin-bottom: 16rem;
                 }
 
-                img {
-                    border-radius: 7px;
-                }
-            }
-        }
+                .mobile-break {
+                    line-height: 12rem;
 
-        .text-right {
-            .title {
-                font-family: font(helvetica);
-                font-size: 6rem;
-                margin-bottom: 2rem;
-                margin-right: 2rem;
+                    &::before {
+                        content: '\a';
+                        white-space: pre;
 
-                @include desktop {
-                    position: absolute;
-                    top: 20rem;
-                    right: 0;
-                    margin-bottom: 0;
-                }
-
-                span {
-                    font-weight: bold;
+                        @include tablet {
+                            content: none;
+                        }
+                    }
                 }
             }
 
             p {
-                font-family: font(alegreya);
+                font-family: font(akkurat);
                 max-width: 50rem;
-                font-size: 2.5rem;
+                font-size: 2.2rem;
                 line-height: 4rem;
                 text-align: left;
-                margin-right: 2rem;
 
                 @include desktop {
-                    position: absolute;
-                    text-align: right;
-                    font-size: 3rem;
-                    top: 35rem;
-                    right: 0;
+                    font-size: 2.5rem;
+                    margin-bottom: 8rem;
                 }
             }
         }
 
         .attributes {
-            font-family: font(helvetica);
-            font-size: 5rem;
-            background-color: colour(prim);
-            border-radius: 10px;
-            transition: 400ms ease-out all;
+            font-family: font(akkurat);
             margin-top: 4rem;
             padding-bottom: 3rem;
 
             @include desktop {
-                margin-top: 0;
                 padding-bottom: 0;
             }
 
-            h2 {
-                font-size: 2.5rem;
+            .subtitle {
+                font-size: 1.4rem;
                 font-weight: normal;
                 line-height: 3rem;
                 text-align: center;
                 padding: 4rem 4rem 2rem 4rem;
 
+                @include tablet {
+                    padding: 10rem 0 2rem 0;
+                }
+
                 @include desktop {
-                    font-size: 3rem;
-                    padding: 4rem 0 0 0;
+                    font-size: 1.8rem;
+                    padding: 16rem 0 4rem 0;
                 }
             }
 
             ul {
                 display: flex;
                 flex-wrap: wrap;
-                padding: 0 2rem;
 
                 @include tablet {
                     padding-bottom: 2rem;
@@ -112,22 +107,34 @@
                     list-style: none;
                     margin: 1rem auto;
                     text-align: center;
-                    background-color: colour(oyster);
                     border-radius: 10px;
                     padding: 2rem;
-                    box-shadow: 5px 10px 3px 1px colour(bazaar);
-                    transition: 200ms ease-out all;
+                    box-shadow: 5px 6px 3px 1px colour(light-gray);
+                    transition: 100ms ease-out all;
+                    width: 100vw;
 
                     @include tablet {
-                        margin: 5rem auto 0 auto;
+                        margin: 3rem auto 0 auto;
+                        width: 320px;
                     }
 
                     @include desktop {
-                        margin-bottom: 4rem;
+                        width: 400px;
                     }
 
                     &:hover {
-                        box-shadow: 2px 5px 3px 1px colour(bazaar);
+                        box-shadow: 2px 5px 3px 1px colour(light-gray);
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        margin-bottom: 2.5rem;
+
+                        p {
+                            margin-left: 2rem;
+                        }
                     }
 
                     .att-icons {
@@ -135,17 +142,20 @@
                         width: 60px;
                     }
 
+                    .att-title {
+                        font-family: font(alessandria);
+                        font-size: 2.5rem;
+                        margin-bottom: 2rem;
+                    }
+
                     p {
                         margin: 1rem 0;
-                        font-size: 20px;
-                        max-width: 18rem;
-                        font-family: font(alegreya);
+                        font-size: 1.2rem;
+                        font-family: font(akkurat);
                         line-height: 2.4rem;
 
-                        &:nth-of-type(1) {
-                            font-size: 2.5rem;
-                            margin-bottom: 2rem;
-                            font-family: font(helvetica);
+                        @include tablet {
+                            font-size: 1.4rem;
                         }
                     }
                 }

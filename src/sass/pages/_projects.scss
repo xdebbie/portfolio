@@ -1,6 +1,6 @@
 #projects {
-    background-color: colour(bazaar);
-    transition: all 400ms ease-out;
+    background: url('/fleck.png') colour(light-gray) repeat;
+    transition: all 100ms ease-out;
     min-height: 80vh;
 
     @include tablet {
@@ -9,6 +9,10 @@
 
     .container {
         position: relative;
+
+        @include desktop {
+            padding: 14rem 0 6rem 0;
+        }
 
         .projects-section {
             padding: 14rem 2rem 0 2rem;
@@ -22,43 +26,51 @@
             }
 
             .title {
-                font-family: font(helvetica);
-                font-size: 3.6rem;
+                font-family: font(alessandria);
+                font-size: 2.2rem;
                 position: absolute;
-                top: 3rem;
+                top: 7.5rem;
                 right: 2rem;
+                user-select: none;
 
-                @include desktop {
-                    top: 2rem;
-                    font-size: 5rem;
+                @include tablet {
+                    font-size: 3.6rem;
+                    right: 4rem;
+                    top: 7.5rem;
                 }
 
-                span {
-                    font-weight: bold;
+                @include desktop {
+                    font-size: 3.6rem;
+                    top: 7.5rem;
+                    right: 0;
+                    font-size: 4rem;
                 }
             }
 
             .projects__header {
-                font-family: font(alegreya);
+                font-family: font(akkurat);
                 line-height: 4rem;
-                margin-top: 6rem;
-
-                p {
-                    max-width: 70rem;
-                    font-size: 2.4rem;
-
-                    @include desktop {
-                        font-size: 3rem;
-                    }
-
-                    &:first-of-type {
-                        margin-bottom: 2rem;
-                    }
-                }
+                margin-top: 12rem;
 
                 @include tablet {
                     font-size: 3rem;
                     margin-top: 0;
+                }
+
+                p {
+                    font-size: 1.2rem;
+
+                    @include tablet {
+                        font-size: 1.4rem;
+                        margin-top: 6rem;
+                    }
+
+                    @include desktop {
+                        font-size: 1.8rem;
+                        margin-bottom: 14rem;
+                        margin-top: 0;
+                        max-width: 70rem;
+                    }
                 }
             }
         }

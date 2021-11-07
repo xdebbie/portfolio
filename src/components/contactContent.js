@@ -27,18 +27,18 @@ const Contact = () => {
                         </p>
                         <p>
                             <a
-                                href="https://twitter.com/debishot"
-                                className="links"
-                            >
-                                twitter
-                            </a>
-                        </p>
-                        <p>
-                            <a
                                 href="https://medium.com/@ithos"
                                 className="links"
                             >
                                 medium
+                            </a>
+                        </p>
+                        <p>
+                            <a
+                                href="https://twitter.com/debishot"
+                                className="links"
+                            >
+                                twitter
                             </a>
                         </p>
                         <p>

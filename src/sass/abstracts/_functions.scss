@@ -4,28 +4,29 @@ $  FUNCTIONS
 
 /* COLOUR MAP */
 $colours: (
-  white: rgb(255, 255, 255),
-  black: rgb(0, 0, 0),
-  cod-gray: rgb(10, 10, 10),
-  sazerac: rgb(255, 241, 227),
-  // light mode
-  oyster: rgb(230, 209, 209),
-  prim: rgb(211, 183, 183),
-  silk: rgb(189, 168, 159),
-  santa-fe: rgb(178, 110, 84),
-  bazaar: rgb(184, 143, 140),
-  cowboy: rgb(75, 37, 45),
-  // dark mode
-  onyx: rgb(18, 18, 18),
-  russian: rgb(37, 37, 37),
-  bonjour: rgb(228, 227, 227),
-  aluminium: rgb(155, 155, 155),
-  shady: rgb(174, 160, 165),
-  bittersweet: rgb(241, 110, 101),
-  lavender: rgb(194, 143, 255),
-  egg: rgb(1, 219, 198),
+    // light mode
+    white: rgb(255, 255, 255),
+    offwhite: #eeeeee,
+    light-gray: #e0e0e0,
+    egg: rgb(1, 219, 198),
+    // dark mode
+    cod-gray: rgb(10, 10, 10),
+    onyx: rgb(18, 18, 18),
+    russian: rgb(37, 37, 37),
+    bonjour: rgb(228, 227, 227),
+    aluminium: rgb(155, 155, 155),
+    // bittersweet: #ff5151,
+    bittersweet: #a239ea,
+    lavender: rgb(194, 143, 255),
+    hard-candy: #ff4848,
+    hardest-candy: #ff5151,
+    pamplemousse: #fc6b68,
+    darkmousse: #ff4848,
+    hotmousse: #fb3640,
+    purplefiesta: #a239ea,
+    purpleland: #c82586
 );
 
 @function colour($colour-name) {
-  @return map-get($colours, $colour-name);
+    @return map-get($colours, $colour-name);
 }

@@ -1,6 +1,6 @@
 #contact {
-    background-color: colour(oyster);
-    transition: all 400ms ease-out;
+    background: url('/fleck.png') colour(offwhite) repeat;
+    transition: all 100ms ease-out;
 
     @include tablet {
         padding: 0;
@@ -10,93 +10,99 @@
         position: relative;
 
         .contact-section {
-            padding: 20rem 2rem 0 2rem;
+            padding: 20rem 2rem 9rem 2rem;
 
             @include desktop {
-                padding: 12rem 0 0 0;
+                padding: 20rem 0 12rem 0;
             }
 
             .title {
-                font-family: font(helvetica);
-                font-size: 3.6rem;
+                font-family: font(alessandria);
+                font-size: 2.2rem;
                 position: absolute;
-                top: 3rem;
+                top: 8.5rem;
                 right: 2rem;
+                user-select: none;
 
-                @include desktop {
-                    right: 0;
-                    top: 2rem;
-                    font-size: 5rem;
+                @include tablet {
+                    font-size: 3.6rem;
+                    right: 4rem;
+                    top: 7.5rem;
                 }
 
-                span {
-                    font-weight: bold;
+                @include desktop {
+                    font-size: 3.6rem;
+                    top: 7.5rem;
+                    right: 0;
+                    font-size: 4rem;
                 }
             }
 
             .info {
-                font-family: font(alegreya);
+                font-family: font(akkurat);
+                margin-top: 6rem;
 
                 p {
                     max-width: 60rem;
-                    font-size: 2.4rem;
-                    margin-bottom: 1rem;
+                    font-size: 1.2rem;
                     line-height: 4rem;
-                    text-align: right;
+                    text-align: left;
 
                     @include tablet {
+                        font-size: 1.4rem;
                         text-align: left;
                     }
 
                     @include desktop {
-                        font-size: 3rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
 
             .address {
                 margin-top: 4rem;
+                text-transform: lowercase;
             }
         }
 
-        .map {
-            margin: 2rem 2rem 0 2rem;
-            padding-bottom: 5rem;
+        // .map {
+        //     margin: 2rem 2rem 0 2rem;
+        //     padding-bottom: 5rem;
 
-            @include desktop {
-                margin: 2rem 0 0 0;
-            }
+        //     @include desktop {
+        //         margin: 2rem 0 0 0;
+        //     }
 
-            // Google maps marker bubble
-            .gm-style {
-                .gm-style-iw-c {
-                    top: -4rem;
-                }
+        //     // Google maps marker bubble
+        //     .gm-style {
+        //         .gm-style-iw-c {
+        //             top: -4rem;
+        //         }
 
-                .gm-style-iw-t {
-                    &:after {
-                        top: -4rem;
-                    }
-                }
-            }
+        //         .gm-style-iw-t {
+        //             &:after {
+        //                 top: -4rem;
+        //             }
+        //         }
+        //     }
 
-            h3 {
-                text-transform: uppercase;
-                margin: 0.5rem;
-            }
+        //     h3 {
+        //         text-transform: uppercase;
+        //         margin: 0.5rem;
+        //     }
 
-            p {
-                margin: 0.5rem;
-            }
+        //     p {
+        //         margin: 0.5rem;
+        //     }
 
-            .map-dimensions {
-                height: 400px;
-                width: 100%;
+        //     .map-dimensions {
+        //         height: 400px;
+        //         width: 100%;
 
-                // * {
-                //     border-radius: 20px;
-                // }
-            }
-        }
+        //         // * {
+        //         //     border-radius: 20px;
+        //         // }
+        //     }
+        // }
     }
 }

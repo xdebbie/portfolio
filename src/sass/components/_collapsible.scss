@@ -1,5 +1,13 @@
 .projects__collapsible {
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 9rem 0;
+
+    @include tablet {
+        padding: 8rem 0 9rem 0;
+    }
+
+    @include desktop {
+        padding: 0 0 6rem 0;
+    }
 
     .collapsible__section {
         display: flex;
@@ -13,9 +21,10 @@
             align-items: center;
             border: none;
             outline: none;
-            transition: 0.2s all ease;
+            transition: 0.1s all ease;
             position: relative;
             background-size: cover;
+            filter: grayscale(100%);
 
             @include tablet {
                 background-position-y: -80px;
@@ -27,25 +36,26 @@
 
             &:hover {
                 opacity: 0.8;
-                transition: 0.2s all ease;
+                transition: 0.1s all ease;
+                filter: none;
             }
 
             .collapsible__title {
-                font-family: font(helvetica);
+                font-family: font(akkurat);
                 text-transform: uppercase;
                 font-size: 16px;
                 position: absolute;
-                top: 10px;
+                top: 14px;
             }
         }
 
         .collapsible__content {
-            background-color: #e6d1d1;
+            background-color: colour(offwhite);
             overflow: hidden;
-            transition: height 0.2s ease-out;
+            transition: height 0.1s ease-out;
 
             .collapsible__body {
-                font-family: font(alegreya);
+                font-family: font(akkurat);
                 margin: 2rem;
                 position: relative;
 
@@ -54,7 +64,7 @@
                 }
 
                 h1 {
-                    font-family: font(helvetica);
+                    font-family: font(akkurat);
                     font-size: 5rem;
                     text-transform: uppercase;
                     position: relative;
@@ -74,7 +84,7 @@
                     .projects__links {
                         font-size: 2rem;
                         font-weight: 200;
-                        font-family: monospace;
+                        font-family: font(akkurat);
                         margin-top: 1rem;
                         text-transform: lowercase;
 
@@ -93,7 +103,7 @@
                 }
 
                 .chips {
-                    font-family: monospace;
+                    font-family: font(akkurat);
                     display: flex;
                     flex-wrap: wrap;
 
@@ -104,15 +114,16 @@
                         margin-bottom: 1rem;
                         margin-right: 1rem;
                         padding: 8px;
-                        background-color: lighten(
-                            $color: #b88f8c,
-                            $amount: 10%
-                        );
-                        transition: 0.2s all ease;
+                        background-color: colour(light-gray);
+                        text-transform: lowercase;
+                        transition: 0.1s all ease;
 
                         &:hover {
-                            background-color: #b88f8c;
-                            transition: 0.2s all ease;
+                            background-color: darken(
+                                $color: colour(light-gray),
+                                $amount: 5%
+                            );
+                            transition: 0.1s all ease;
                         }
                     }
                 }
@@ -140,7 +151,7 @@
                             padding-right: 4rem;
 
                             @include tablet {
-                                font-size: 2.3rem;
+                                font-size: 1.8rem;
                             }
                         }
                     }
@@ -151,13 +162,13 @@
 }
 
 .active {
-    transition: height 0.2s ease-out;
+    transition: height 0.1s ease-out;
 }
 
 // Chevron
 .collapsible__icon {
     margin-left: auto;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
     position: absolute;
     top: 10px;
     right: 10px;

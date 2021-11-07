@@ -1,6 +1,6 @@
 #stack {
-    background-color: colour(oyster);
-    transition: all 400ms ease-out;
+    background: url('/fleck.png') colour(offwhite) repeat;
+    transition: all 100ms ease-out;
 
     @include tablet {
         padding: 0;
@@ -10,122 +10,79 @@
         position: relative;
 
         .stack-section {
-            padding: 20rem 2rem 0 2rem;
+            padding: 20rem 2rem 2rem 2rem;
 
             @include desktop {
-                padding: 12rem 0 0 0;
+                padding: 20rem 0 2rem 0;
             }
 
             .title {
-                font-family: font(helvetica);
-                font-size: 3.6rem;
+                font-family: font(alessandria);
+                font-size: 2.2rem;
                 position: absolute;
-                top: 3rem;
+                top: 7.5rem;
                 right: 2rem;
+                user-select: none;
+
+                @include tablet {
+                    font-size: 3.6rem;
+                    right: 4rem;
+                    top: 7.5rem;
+                }
 
                 @include desktop {
+                    font-size: 3.6rem;
+                    top: 7.5rem;
                     right: 0;
-                    top: 2rem;
-                    font-size: 5rem;
-                }
-
-                span {
-                    font-weight: bold;
-                }
-            }
-
-            .stack-bowie {
-                .stack-image {
-                    max-width: 830px;
-
-                    img {
-                        width: 830px;
-                        border-radius: 10px;
-                    }
-                }
-
-                p {
-                    font-family: font(alegreya);
-                    font-size: 2rem;
-                    margin: 2rem 0;
+                    font-size: 4rem;
                 }
             }
 
             .stack-boxes {
-                max-width: 100%;
-                display: grid;
-                grid-gap: 4rem;
-                grid-template-columns: repeat(1, 1fr);
                 margin-top: 6rem;
-                padding-bottom: 6rem;
+                padding-bottom: 7rem;
 
-                @include tablet {
-                    grid-template-columns: repeat(2, 1fr);
-                    max-width: 100%;
+                @include desktop {
+                    padding-bottom: 10rem;
                 }
 
-                .smaller-box {
-                    border-radius: 10px;
-                    border: 5px solid colour(bazaar);
-                    padding: 3rem 0 0 0;
-                    text-align: center;
-                    transition: all 400ms ease-out;
-                    display: grid;
-                    grid-template-rows: 1fr 0.8fr;
-
-                    .stack-sect {
-                        grid-row-start: span 1;
+                .subsection {
+                    &:last-of-type {
+                        margin-top: 10rem;
                     }
 
                     p {
-                        font-size: 2rem;
-                        text-align: center;
-                        font-weight: bold;
-                        font-family: font(helvetica);
-                        text-transform: uppercase;
-                        background-color: colour(cowboy);
-                        width: fit-content;
-                        color: colour(oyster);
-                        margin: 0 auto 2rem auto;
-                        border-radius: 10px;
-                        padding: 2px 10px;
-                        border: 5px solid colour(cowboy);
+                        font-family: font(alessandria);
+                        font-size: 3rem;
+                        margin-bottom: 3rem;
+                    }
 
-                        @include tablet {
-                            font-size: 2.6rem;
-                        }
+                    div {
+                        display: flex;
+                        flex-direction: row;
                     }
 
                     ul {
-                        &:nth-of-type(1) {
-                            margin-bottom: 4rem;
+                        width: 200px;
+
+                        &:first-of-type {
+                            margin-right: 10rem;
                         }
 
                         li {
-                            text-align: center;
-                            list-style: none;
-                            font-size: 1.4rem;
-                            font-family: font(helvetica);
-                            margin: 1.2rem auto;
-                            text-transform: uppercase;
+                            font-family: font(akkurat);
+                            font-size: 1.2rem;
+                            line-height: 4rem;
+                            list-style-type: none;
+                            text-transform: lowercase;
 
                             @include tablet {
-                                font-size: 2rem;
+                                font-size: 1.4rem;
                             }
-                        }
-                    }
 
-                    .stack-icons {
-                        width: 80px;
-                        height: 80px;
-                        margin-bottom: 3rem;
-                        transition: all 0.4s ease;
-                    }
-
-                    &:hover {
-                        .stack-icons {
-                            transform: scale(1.2);
-                            transition: all 0.4s ease;
+                            @include desktop {
+                                font-size: 1.8rem;
+                            }
                         }
                     }
                 }

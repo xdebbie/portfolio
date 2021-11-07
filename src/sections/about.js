@@ -160,7 +160,7 @@ const About = () => {
                     <p className="subtitle">interests</p>
                     <ul>
                         <li>rowing</li>
-                        <li>gym</li>
+                        <li>league of legends</li>
                         <li>bass guitar</li>
                         <li>gin tonic</li>
                         <li>cats</li>

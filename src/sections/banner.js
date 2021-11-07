@@ -31,18 +31,26 @@ const Banner = () => {
                 </div> */}
                 <div className="hero">
                     <div className="title">
-                        Ahoy! I'm <span>Deborah</span>.
+                        Ahoy! <span className="mobile-break">I'm Deborah</span>
                     </div>
                     <p>
-                        I am a front-end web developer based in Paris, France. I
-                        am currently working at{' '}
+                        I am a{' '}
+                        <a
+                            href="https://linkedin.com/in/deborah-caldeira"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="links big"
+                        >
+                            front-end engineer
+                        </a>{' '}
+                        based in Paris, France. I am currently working at{' '}
                         <a
                             href="https://www.allowa.com"
                             target="_blank"
                             rel="noreferrer"
-                            className="links"
+                            className="links big"
                         >
-                            Allowa
+                            allowa
                         </a>
                         .
                     </p>

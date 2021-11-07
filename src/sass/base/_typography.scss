@@ -50,7 +50,10 @@ $  FONT-SIZE
  --------------------------------------------*/
 $font-sizes: (
     logo: 2rem,
+    logo-tablet: 1.8rem,
     nav: 1.6rem,
+    nav-mobile: 0.9rem,
+    nav-tablet: 1.4rem,
 );
 
 @function font-size($font-size-name) {

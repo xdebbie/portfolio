@@ -1,5 +1,13 @@
 .projects__collapsible {
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 9rem 0;
+
+    @include tablet {
+        padding: 8rem 0 9rem 0;
+    }
+
+    @include desktop {
+        padding: 0 0 6rem 0;
+    }
 
     .collapsible__section {
         display: flex;
@@ -13,9 +21,10 @@
             align-items: center;
             border: none;
             outline: none;
-            transition: 0.2s all ease;
+            transition: 0.1s all ease;
             position: relative;
             background-size: cover;
+            filter: grayscale(100%);
 
             @include tablet {
                 background-position-y: -80px;
@@ -27,7 +36,8 @@
 
             &:hover {
                 opacity: 0.8;
-                transition: 0.2s all ease;
+                transition: 0.1s all ease;
+                filter: none;
             }
 
             .collapsible__title {
@@ -42,7 +52,7 @@
         .collapsible__content {
             background-color: colour(offwhite);
             overflow: hidden;
-            transition: height 0.2s ease-out;
+            transition: height 0.1s ease-out;
 
             .collapsible__body {
                 font-family: font(akkurat);
@@ -106,14 +116,14 @@
                         padding: 8px;
                         background-color: colour(light-gray);
                         text-transform: lowercase;
-                        transition: 0.2s all ease;
+                        transition: 0.1s all ease;
 
                         &:hover {
                             background-color: darken(
                                 $color: colour(light-gray),
                                 $amount: 5%
                             );
-                            transition: 0.2s all ease;
+                            transition: 0.1s all ease;
                         }
                     }
                 }
@@ -152,13 +162,13 @@
 }
 
 .active {
-    transition: height 0.2s ease-out;
+    transition: height 0.1s ease-out;
 }
 
 // Chevron
 .collapsible__icon {
     margin-left: auto;
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
     position: absolute;
     top: 10px;
     right: 10px;

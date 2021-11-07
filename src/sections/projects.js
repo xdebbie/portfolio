@@ -3,11 +3,15 @@ import Collapsible from '../components/collapsible'
 import Lightbox from '../components/lightbox'
 
 // Assets
+import Allowa from '../images/projects/allowa.jpeg'
+import Fabriq from '../images/projects/fabriq.jpeg'
 import Pacific from '../images/projects/pacific.png'
 import Forkked from '../images/projects/forkked.png'
 import Hannah from '../images/projects/hannah.jpeg'
 import Kotka from '../images/projects/ekotka.jpg'
 import {
+    photosAllowa,
+    photosFabriq,
     photosForkked,
     photosPacific,
     photosHannah,
@@ -27,6 +31,116 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="projects__collapsible">
+                    {/* Allowa */}
+                    <Collapsible title="allowa" bgimage={Allowa}>
+                        <h1>
+                            allowa <span>all-digital real estate agency</span>
+                            <div className="projects__links">
+                                <a
+                                    href="https://usefabriq.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="links"
+                                >
+                                    web
+                                </a>
+                            </div>
+                        </h1>
+                        <div className="chips">
+                            <div className="chip">React</div>
+                            <div className="chip">JavaScript</div>
+                            <div className="chip">TypeScript</div>
+                            <div className="chip">Sass</div>
+                            <div className="chip">Node.js</div>
+                            <div className="chip">Postgresql</div>
+                        </div>
+                        <div className="projects__description">
+                            <div className="projects__description--text">
+                                <p>
+                                    Since January 2021, I have been working at
+                                    allowa as a full-stack engineer. It is my
+                                    first professional experience with
+                                    TypeScript and I have been enjoying every
+                                    single minute of it.
+                                </p>
+                                <p>
+                                    allowa is a French digital real estate
+                                    agency that differentiates itself by
+                                    handling nearly the whole process of sales
+                                    and lettings in a fully digital and
+                                    non-hassle fashion.
+                                </p>
+                                <p>
+                                    I worked under the supervision of the tech
+                                    lead and in partnership with an agency. As I
+                                    have joined the company at its early stage,
+                                    I have had the opportunity to be part of the
+                                    initial development and implementation of
+                                    all pages and features.
+                                </p>
+                            </div>
+                            <div className="projects__description--text">
+                                <Lightbox photoSet={photosAllowa} />
+                            </div>
+                        </div>
+                    </Collapsible>
+                    {/* Fabriq */}
+                    <Collapsible title="fabriq" bgimage={Fabriq}>
+                        <h1>
+                            Fabriq{' '}
+                            <span>
+                                workshop management solution for industry 4.0
+                            </span>
+                            <div className="projects__links">
+                                <a
+                                    href="https://usefabriq.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="links"
+                                >
+                                    web
+                                </a>
+                            </div>
+                        </h1>
+                        <div className="chips">
+                            <div className="chip">Vue</div>
+                            <div className="chip">VueX</div>
+                            <div className="chip">JavaScript</div>
+                            <div className="chip">HTML</div>
+                            <div className="chip">CSS</div>
+                        </div>
+                        <div className="projects__description">
+                            <div className="projects__description--text">
+                                <p>
+                                    In 2020 I worked at fabriq as a front-end
+                                    developer. It was my first professional
+                                    experience with Vue and VueX.
+                                </p>
+                                <p>
+                                    fabriq is a French SaaS for industrial
+                                    plants that aims to centralise all
+                                    operational data, field audits, action plans
+                                    and indicators in a single tool to build an
+                                    enriched and collaborite platform, to
+                                    ultimately help improve industrial
+                                    performance through data analysis.
+                                </p>
+                                <p>
+                                    I worked under the supervision of the tech
+                                    lead, mostly fixing bugs and implementing
+                                    few features. Although it was an interesting
+                                    experience working on a product with a very
+                                    fast implementation process which permitted
+                                    collecting feeedback from its users in a
+                                    nearly instant way, it helped me to
+                                    reinforce my preferences towards React.
+                                </p>
+                            </div>
+                            <div className="projects__description--text">
+                                <Lightbox photoSet={photosFabriq} />
+                            </div>
+                        </div>
+                    </Collapsible>
                     {/* Pacific */}
                     <Collapsible title="pacific" bgimage={Pacific}>
                         <h1>

@@ -28,7 +28,9 @@ const Footer = () => {
                         <Makerslate className="footer-icons" alt="makerslate" />
                     </Link> */}
                 </div>
-                <p>© 2021 kotka&bowie</p>
+                <p>
+                    © 2021 <span>kotka&bowie</span>
+                </p>
             </div>
         </footer>
     )

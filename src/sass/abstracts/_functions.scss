@@ -22,9 +22,16 @@ $colours: (
     bonjour: rgb(228, 227, 227),
     aluminium: rgb(155, 155, 155),
     shady: rgb(174, 160, 165),
-    bittersweet: rgb(241, 110, 101),
+    bittersweet: #ff5151,
     lavender: rgb(194, 143, 255),
     egg: rgb(1, 219, 198),
+    hard-candy: #ff4848,
+    hardest-candy: #ff5151,
+    pamplemousse: #fc6b68,
+    darkmousse: #ff4848,
+    hotmousse: #fb3640,
+    purplefiesta: #a239ea,
+    purpleland: #c82586,
 );
 
 @function colour($colour-name) {

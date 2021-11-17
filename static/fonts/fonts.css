@@ -12,7 +12,7 @@ $  FONT FACES
         url('Alessandria.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -24,5 +24,5 @@ $  FONT FACES
         url('Akkurat-Mono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }

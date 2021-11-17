@@ -41,6 +41,8 @@ const Stack = () => {
                                     <li>JavaScript</li>
                                     <li>GraphQL</li>
                                     <li>Node.js</li>
+                                    <li>Postgresql</li>
+                                    <li>MongoDB</li>
                                     <li>PHP</li>
                                     <li>Python</li>
                                     <li>C++</li>

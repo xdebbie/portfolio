@@ -19,7 +19,13 @@ class IndexPage extends React.Component {
                     <meta charSet="utf-8" />
                     <title>𝘿𝙚𝙗𝙤𝙧𝙖𝙝 𝘾𝙖𝙡𝙙𝙚𝙞𝙧𝙖</title>
                     <link rel="prerender" href="https://deborahcal.com" />
-                    <link rel="preload" href="fonts/fonts.css" />
+                    <link
+                        rel="preload"
+                        href="fonts/Alessandria.woff2"
+                        crossorigin="anonymous"
+                        as="font"
+                        type="font/woff2"
+                    />
                 </Helmet>
                 <Nav />
                 <Banner />

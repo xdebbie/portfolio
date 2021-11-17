@@ -4,12 +4,24 @@ $  FONT FACES
 
 /* TG PRAKTIKAL - NAV */
 @font-face {
-  font-family: "Alegreya";
-  src: url("Alegreya-Regular.eot");
-  src: url("Alegreya-Regular.eot?#iefix") format("embedded-opentype"),
-    url("Alegreya-Regular.woff") format("woff"),
-    url("Alegreya-Regular.woff2") format("woff2"),
-    url("Alegreya-Regular.ttf") format("truetype");
+  font-family: "Alessandria";
+  src: url("Alessandria.eot");
+  src: url("Alessandria.eot?#iefix") format("embedded-opentype"),
+    url("Alessandria.woff") format("woff"),
+    url("Alessandria.woff2") format("woff2"),
+    url("Alessandria.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: "Akkurat-Mono";
+  src: url("Akkurat-Mono.eot");
+  src: url("Akkurat-Mono.eot?#iefix") format("embedded-opentype"),
+    url("Akkurat-Mono.woff") format("woff"),
+    url("Akkurat-Mono.woff2") format("woff2"),
+    url("Akkurat-Mono.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: fallback;

@@ -51,7 +51,7 @@ const Footer = () => {
                     </Link> */}
                 </div>
                 <p>
-                    © 2021 <span>kotka&bowie</span>
+                    © 2022 <span>kotka&bowie</span>
                 </p>
             </div>
         </footer>

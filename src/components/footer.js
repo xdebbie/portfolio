@@ -4,6 +4,7 @@ import React from 'react'
 import Linkedin from '../assets/linkedin.svg'
 import Github from '../assets/github.svg'
 import Medium from '../assets/medium.svg'
+import Twitter from '../assets/twitter.svg'
 // import Makerslate from '../assets/makerslate.svg'
 
 const Footer = () => {
@@ -14,14 +15,14 @@ const Footer = () => {
                     <a
                         href="https://github.com/xdebbie"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <Github className="footer-icons github" alt="github" />
                     </a>
                     <a
                         href="https://linkedin.com/in/deborah-caldeira"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <Linkedin
                             className="footer-icons linkedin"
@@ -29,9 +30,19 @@ const Footer = () => {
                         />
                     </a>
                     <a
+                        href="https://twitter.com/gitdebbie"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <Twitter
+                            className="footer-icons twitter"
+                            alt="twitter"
+                        />
+                    </a>
+                    <a
                         href="https://medium.com/@ithos"
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <Medium className="footer-icons" alt="medium" />
                     </a>

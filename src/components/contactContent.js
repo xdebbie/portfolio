@@ -11,8 +11,10 @@ const Contact = () => {
                     <div className="info">
                         <p>
                             <a
-                                href="mailto: deborah@asia.com"
+                                href="mailto: deh@live.in"
                                 className="links"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 email
                             </a>
@@ -21,6 +23,8 @@ const Contact = () => {
                             <a
                                 href="https://github.com/xdebbie"
                                 className="links"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 github
                             </a>
@@ -29,14 +33,18 @@ const Contact = () => {
                             <a
                                 href="https://medium.com/@ithos"
                                 className="links"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 medium
                             </a>
                         </p>
                         <p>
                             <a
-                                href="https://twitter.com/debishot"
+                                href="https://twitter.com/gitdebbie"
                                 className="links"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 twitter
                             </a>
@@ -45,6 +53,8 @@ const Contact = () => {
                             <a
                                 href="https://linkedin.com/in/deborah-caldeira"
                                 className="links"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 linkedin
                             </a>

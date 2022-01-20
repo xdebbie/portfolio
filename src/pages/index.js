@@ -10,6 +10,7 @@ import Projects from '../sections/projects'
 import Stack from '../sections/stack'
 import Contact from '../sections/contact'
 import Footer from '../components/footer'
+import AlessandriaFont from '../../static/fonts/Alessandria.woff2'
 
 class IndexPage extends React.Component {
     render() {
@@ -21,7 +22,7 @@ class IndexPage extends React.Component {
                     <link rel="prerender" href="https://deborahcal.com" />
                     <link
                         rel="preload"
-                        href="fonts/Alessandria.woff2"
+                        href={AlessandriaFont}
                         crossorigin="anonymous"
                         as="font"
                         type="font/woff2"
